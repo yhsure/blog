@@ -4,7 +4,7 @@ date: 2024-03-15
 tags:
   - fruit
 ---
-JPEG uses a lot of clever tricks that take advantage of the human visual system to pack as much information that is important to human visual reconstruction of the image into as little raw digital information as possible.
+aJPEG uses a lot of clever tricks that take advantage of the human visual system to pack as much information that is important to human visual reconstruction of the image into as little raw digital information as possible.
 
 
 - It's compression!
