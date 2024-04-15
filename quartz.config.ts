@@ -22,7 +22,7 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "DM Serif Text",
+        header: "DM Serif Display",
         body: "Bricolage Grotesque",
         code: "JetBrains Mono",
       },
@@ -40,7 +40,7 @@ const config: QuartzConfig = {
         darkMode: {
           light: "#101520",
           lightgray: "#1D232D",
-          gray: "#2A354B",
+          gray: "#5A657B",
           darkgray: "#d4d4d4",
           dark: "#ebebec",
           secondary: "#7188A9",
