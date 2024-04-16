@@ -20,7 +20,7 @@ body {
   background-image: url("/static/texture.png");
   mix-blend-mode: hard-light;
   pointer-events: none;
-  z-index: 999;
+  z-index: -1;
 }
 
 [saved-theme="dark"] #texture {
