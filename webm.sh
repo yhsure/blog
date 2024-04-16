@@ -6,8 +6,7 @@ convert_to_webm() {
   echo "converting ${input_file}"
   local output_file="${input_file%.*}.webm"
   
-  # ffmpeg -i "$input_file" -c:v libvpx-vp9 -crf 30 -b:v 0 -b:a 128k -c:a libopus "$output_file"
-  ffmpeg -i "$input_file" -c:v libsvtav1 -preset 4 -crf 30 -g 240 -pix_fmt yuv420p10le -svtav1-params tune=0:film-grain=8 -b:a 128k -nostdin -c:a libopus "$output_file" 
+  ffmpeg -i "$input_file" -c:v libvpx-vp9 -crf 30 -b:v 0 -b:a 128k -c:a libopus "$output_file"
 }
 
 # Recursively find and convert MP4 files
