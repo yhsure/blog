@@ -47,4 +47,4 @@ A la [[thoughts/Seeing like a State|Seeing like a State]]: excessive formalizati
 
 ## [[thoughts/tools for thought|Tools for thought]]
 
-I think this applies for thinking and note-taking too. My thesis is that having a scratch space be incredibly low friction to access (on par with or lower than Apple Notes) is incredibly important to cultivating good knowledge/deadline management. See: [[thoughts/Projects#Tabspace - a scratchspace for your new tab page|TabSpace]]
+I think this applies for thinking and note-taking too. My thesis is that having a scratch space be incredibly low friction to access (on par with or lower than Apple Notes) is incredibly important to cultivating good knowledge/deadline management. See: [[thoughts/craft#Tabspace - a scratchspace for your new tab page|TabSpace]]

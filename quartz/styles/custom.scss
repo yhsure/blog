@@ -31,6 +31,25 @@ body {
   filter: invert(100%);
 }
 
+body[data-slug="thoughts/craft"] {
+  & li:has(> img, > video) {
+    list-style-type: none;
+
+    &>img, &>video {
+      margin: 1rem 0;
+    }
+  }
+
+  article>ul {
+    padding-left: 0;
+
+    &>li {
+      list-style-type: none;
+      margin: 1rem 0;
+    }
+  }
+}
+
 .left {
   display: grid !important;
   gap: 1.5rem !important;
@@ -77,6 +96,7 @@ hr {
   text-align: center;
   width: 40%;
   border-color: var(--gray);
+
   &:after {
     content: "* * *";
     display: inline-block;
