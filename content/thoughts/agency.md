@@ -32,3 +32,25 @@ See also: [[thoughts/In Over Our Heads]], [[thoughts/burnout]], [[thoughts/taste
 2. Option to leave ([[thoughts/credible exit|exit]])
 3. Control access to your data (safety)
 4. Provide capacity to others (serve)
+
+## Mechanistic vs Volitional Agency
+[Source](https://arxiv.org/pdf/2404.13861)
+
+"When we say that something is political, we mean that it involves the contestation of competing (human) wills—that is, of possibly-conflicting goals and intentions, each of which ought to be respected." ^e69010
+
+Definitions:
+- An Agent as defined by List and Pettit [2011]
+	1. Have representational states that depict how things are in the environment
+	2. Have motivational states that specify how it requires things to be in the environment
+	3. Have the capacity to process its representational and motivational states, leading it to intervene suitably in the environment whenever that environment fails to match a motivating specification.
+- Functional agency: It is common in machine learning literature to refer to AI (systems) as agents with little need for additional characterization (e.g. “multi-agent reinforcement learning,” “dialogue agent,” etc.). In these cases, agent is primarily meant as shorthand to capture particular functionality of the algorithmic object. (term mine, definition attributed to author)
+- Agency in the lens of how ones "moral character" might be evaluated
+	- Mechanistic agency: agency is defined primarily by the ability to take action in the world given some information
+		- It draws from the Platonic claim that virtue—that is, ethical behavior—is knowledge about what is good
+		- Ethical missteps are then epistemic failings, and it follows that more information
+		- However, an agent is a moral agent in the mechanistic sense if and only if it can be held responsible. In examining the backwards-looking question, we argue that AI systems fail this standard, meaning that they cannot be understood as moral agents, even mechanistically
+	- Volitional agency: agency is defined by actively making decisions in accordance with an internal desires
+		- Extends Aristotle’s argument that virtue is an active practice towards becoming a certain “kind of” person.
+- To “hold responsible” implies the existence of some action, such as a penalty, that is taken with the goal of shaping the agent’s future behavior. Yet such an action may not exist
+- Q: can decisions made by purely stochastic processes be considered normatively significant? If I flip a coin to make a decision for me to determine whether to commit some action, can I be held responsible?
+	- See: [[thoughts/intentionality|intentionality]]

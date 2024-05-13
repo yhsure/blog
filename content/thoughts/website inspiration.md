@@ -27,6 +27,7 @@ tags:
 - https://opalcamera.com/opal-tadpole: spicy onscroll product description
 - https://taliacotton.com/: hover over letters
 - https://jessmart.in/: map site
+- https://archive.jakedowsmith.com/rosemarybutcher.com/: history bar
 
 ## Aesthetics
 
@@ -81,6 +82,7 @@ tags:
 - https://bbycroft.net/llm: informative explainer
 - https://www.stripe.press/poor-charlies-almanack: just fun + great info presentation
 - https://buttermax.net/
+- https://84-24.org/: scroll-y telling
 
 ## Portfolios
 
