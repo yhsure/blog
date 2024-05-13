@@ -12,6 +12,8 @@ by _Langdon Winner_
 
 > "Politics" is defined as "arrangements of power and authority in human associations as well as the activities that take place within those arrangements." (see: [[thoughts/software and politics]])
 
+![[thoughts/agency#^e69010|agency]]
+
 "In controversies about technology and society, there is no idea more provocative than the notion that technical things have political qualities"
 
 "What matters is not technology itself, but the social or economic system in which it is embedded."
