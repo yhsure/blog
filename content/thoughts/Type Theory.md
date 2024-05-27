@@ -27,3 +27,18 @@ Extrinsic types are great because you can apply multiple type systems to your co
 e.g. TypeScript / Python type annotations
 
 The Curry typist argues that well-typed programs are a subset of dynamically typed programs. In other words, well-typed programs are just dynamic programs that are checked for type errors.
+
+## Variance
+Variance is how subtyping between more complex types relates to subtyping between their components.
+
+ For any following code examples, assume you have a type `A` and a subtype `B` that inherits from `A`.
+
+- Covariant if the type preserves the ordering of types (≤), which orders types from more specific to more generic
+	- In the context of functions: something takes a parameter `A` can also take `B`.
+- Contravariant if the type reverses this ordering
+	- It occurs when a type system allows a function to accept a less derived type than originally specified.
+	- This is mostly used in the context of function types (i.e. types of named and anonymous functions).
+	- A function with type `(A -> T)` can always be assigned to something that takes a type `(B -> T)`
+		- Imagine a function with signature `feed: (creature: Dog) => void`
+		- You can always pass a more generic function `feed: (creature: Animal) => void` in its place
+	- When dealing with functions that have multiple input types, contravariance applies to each parameter individually
