@@ -14,7 +14,7 @@ tags:
 	- $<20$GW: there may be little or no aurora observable.
 	- $>20$GW: you may need to be near the aurora to see it.
 	- $>50$GW: the aurora should be quite observable with lots of activity and motion across the sky. 
-	- >$100$GW: this is considered to be a very significant geomagnetic storm.
+	- $>100$GW: this is considered to be a very significant geomagnetic storm.
 - Solar Wind Speed
 	- The solar wind is charged particles that travel in a stream projected from the sun. These particles include mostly protons and electrons, flowing from the Sun.
 	- $<400$km/s: Normal
