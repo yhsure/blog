@@ -18,7 +18,7 @@ In these emulators, the wires of the traditional TTY are replaced with pairs of 
 ### Creating a PTY
 
 - The terminal emulator asks the kernel to open a PTY
-- The kernel returns the PTY as a file descriptor. This is the 'leader' which is intended for the terminal to interface with (read and write data)
+- The kernel returns the PTY as a [[thoughts/file descriptor|file descriptor]]. This is the 'leader' which is intended for the terminal to interface with (read and write data)
 - It also creates a 'follower' PTY which is used by the shell and other processes in the session
 - The terminal emulator then spawns the shell which reads and writes from the follower PTY (the shell's `stdin`, `stderr`, and `stdout`) is set to the follower PTY
 
@@ -69,6 +69,6 @@ See also: [x-term spec](https://www.xfree86.org/current/ctlseqs.html)
 
 [Source](https://www.warp.dev/blog/how-warp-works)
 
-Most shells provide hooks for before the prompt is rendered (zsh calls this [precmd](https://zsh.sourceforge.io/Doc/Release/Functions.html)) and before a command is executed ([preexec](https://zsh.sourceforge.io/Doc/Release/Functions.html)). Zsh and Fish have built in support for these hooks. Though bash does not have built in support for these hooks, scripts like [bash-preexec](https://github.com/rcaloras/bash-preexec) exist to mimic the behavior of other shells. Using these hooks, we send a custom DCS ([Device Control String](<https://vt100.net/docs/vt510-rm/chapter4.html#:~:text=Device%20control%20strings%20(DCS)%2C,for%20a%20device%20control%20string.>)) from the running session to Warp. This DCS contains an encoded JSON string that includes metadata about the session that we want to render. Within Warp we can parse the DCS, deserialize the JSON, and create a new block within our data model.
+> Most shells provide hooks for before the prompt is rendered (zsh calls this [precmd](https://zsh.sourceforge.io/Doc/Release/Functions.html)) and before a command is executed ([preexec](https://zsh.sourceforge.io/Doc/Release/Functions.html)). Zsh and Fish have built in support for these hooks. Though bash does not have built in support for these hooks, scripts like [bash-preexec](https://github.com/rcaloras/bash-preexec) exist to mimic the behavior of other shells. Using these hooks, we send a custom DCS ([Device Control String](<https://vt100.net/docs/vt510-rm/chapter4.html#:~:text=Device%20control%20strings%20(DCS)%2C,for%20a%20device%20control%20string.>)) from the running session to Warp. This DCS contains an encoded JSON string that includes metadata about the session that we want to render. Within Warp we can parse the DCS, deserialize the JSON, and create a new block within our data model.
 
-We also create a separate grid for each command and output based on the precmd/preexec hooks we receive from the shell. This level of grid isolation ensures we can separate commands and their output without having to deal with the output of one command overwriting that of another.
+> We also create a separate grid for each command and output based on the precmd/preexec hooks we receive from the shell. This level of grid isolation ensures we can separate commands and their output without having to deal with the output of one command overwriting that of another.

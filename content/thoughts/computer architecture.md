@@ -87,7 +87,7 @@ After the kernel finishes handling the interrupt, it uses an instruction `IRET` 
 
 We can fake parallelism by letting processes take turns on the CPU.
 
-We can do this by programming a timer chip to trigger a switch to an OS [[#Interrupts|interupt]] handler after a certain amount of time passes.
+We can do this by programming a timer chip to trigger a switch to an OS [[#Interrupts|interrupt]] handler after a certain amount of time passes.
 
 OS schedulers use *timer chips* like [PITs](https://en.wikipedia.org/wiki/Programmable_interval_timer) to trigger hardware interrupts for multitasking:
 

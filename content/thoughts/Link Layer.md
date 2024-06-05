@@ -33,3 +33,10 @@ LAN but across local networks... spooky
 
 It encapsulates the [[thoughts/MAC]] frame into a [[thoughts/UDP]] datagram for transport across an IP network. This creates an [[thoughts/Overlay Network|overlay network]]
 
+## Berkeley Packet Filter
+
+The Berkeley Packet Filter (BPF; also BSD Packet Filter, classic BPF or cBPF) is a network tap and packet filter which permits computer network packets to be captured and filtered at the operating system level.
+
+Specifically, it allows a userspace process to supply a filter program that specifies which packets it wants to receive. 
+
+This avoids copying unwanted packets from the operating system kernel to the process, greatly improving performance. The filter program is in the form of instructions for a virtual machine, which are interpreted, or compiled into machine code by a just-in-time (JIT) mechanism and executed, in the kernel.
