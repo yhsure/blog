@@ -53,7 +53,7 @@ Ambient Authority:
 
 - We will use the term ambient authority to describe authority that is exercised, but not selected, by its user.
 - The corresponding analogy is to imagine a world with doors but without keys. When a person walks up to a door, the door magically opens if it deems the person worthy.
-- For example, [[thoughts/Unix|Unix]] filesystem permissions constitute an ambient authority mechanism, because the caller of a function such as `open()` does not choose any credentials to present with the request; the request merely succeeds or fails
+- For example, [[thoughts/Unix|Unix]] filesystem [[thoughts/Permissions|permissions]] constitute an ambient authority mechanism, because the caller of a function such as `open()` does not choose any credentials to present with the request; the request merely succeeds or fails
 
 Confused Deputy Problems:
 

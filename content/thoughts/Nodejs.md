@@ -9,6 +9,8 @@ tags:
 
 > The event loop is what allows Node.js to perform non-blocking I/O operations — despite the fact that JavaScript is single-threaded
 
+This is powered by [[thoughts/libuv|libuv]].
+
 Since most modern kernels are multi-threaded, they can handle multiple operations executing in the background. When one of these operations completes, the kernel tells Node.js so that the appropriate callback may be added to the **poll** queue to eventually be executed.
 
 ```plaintext
@@ -42,5 +44,3 @@ Since most modern kernels are multi-threaded, they can handle multiple operation
 4. Poll: wait for system to call us back for I/O events (normally, this is where Node chooses to block)
 5. Check: `setImmediate()`
 6. Close callbacks: `socket.on('close', ...)`
-
-``
