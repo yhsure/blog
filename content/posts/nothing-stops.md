@@ -12,7 +12,7 @@ _It was so heavy-handed and so stupid, hitting the nail on the head so hard that
 
 Nothing stops. None of it. The good times, nor the bad. There is no "until this is over", or "when I'm done this." There is no "when I get less busy" or "after this term." _Nothing stops._
 
-There is one Annie Dillard [quote](thoughts/quotes.md) I hold central to my 'consciousness cannon',
+There is one Annie Dillard [quote](thoughts/quotes.md) I hold central to my world view,
 
 > How we spend our days is, of course, how we spend our lives.
 
@@ -20,13 +20,11 @@ What we do with this hour and that one is what we are doing. What can you do to 
 
 Take the time to find yourself. Take the time to smell the proverbial flowers. Take a break to sharpen your saw for it will not delay you from cutting more wood.
 
-There is no permanence to this universe. If we could stop time, we would. Bill Waterson once said that 'If people could put rainbows in zoos, they'd do it'. Everything we build is a sand castle waiting to be washed away at high tide.
+There is no permanence to this universe. If we could stop time, we would. Bill Waterson once said that 'If people could put rainbows in zoos, they'd do it'. Everything we build is a sand castle waiting to be washed away at high tide. And yet, we build and craft the most beautiful sandcastles we can, knowing they will be washed away. We get others to build with us, suspending the knowledge that this will all eventually disappear.
 
-We build and craft the most beautiful sandcastles we can, knowing they will be washed away. We get others to build with us, suspending the knowledge that this will all eventually disappear.
+I think that's what gives life its beauty -- its scarcity. If one could live forever and do everything they could ever want, why wouldn't they choose it[^1]? We value the time of others because we know that is finite. *Life* has meaning because it is finite.
 
-I think that's what gives life its beauty -- its scarcity. If one could live forever and do everything they could ever want, why wouldn't they choose it[^1]? We value the time of others because we know that is finite. Life has meaning because it is finite.
-
-Love then, of the world, is _knowingly_ choosing the losing side. What is love but the constant battle against entropy that drives everything apart and strips it of its salience? What greater project is there, in an unbearable time, in a perpetual future, where nothing stops? In a society that never stops, isn't loving the ultimate form of protest? To be able to be whole in your existence, to share your time on this little piece of rock drifting through space together?
+Love then is _knowingly_ choosing the losing side. What is love but the constant battle against entropy that drives everything apart and strips it of its salience? What greater project is there, in an unbearable time, in a perpetual future, where nothing stops? In a society that never stops, isn't loving the ultimate form of protest? To be able to be whole in your existence, to share your time on this little piece of rock drifting through space together?
 
 Companionship is valuable because it affords the opportunity to feel 'seen' by another. We can only, according to Nathaniel Braden, view ourselves conceptually but we need others to view ourselves perceptually. Other consciousnesses function like a mirror -- being seen in this way is recognition of personhood. The feeling of being seen is psychological visibility. Love then, is witness through it all.
 

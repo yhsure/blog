@@ -135,6 +135,10 @@ What greater thing could there be to cultivate?
 
 ![[thoughts/images/makers-mark.png|500]]
 
+> "Aesthetic beauty is as much about how and whether you look as what you see. From the quark to the supernova, the wonders do not cease. It is our attentiveness that is in short supply, our ability and willingness to do the work that awe requires."
+> 
+> -- John Green, *[[thoughts/The Anthropocene Reviewed|The Anthropocene Reviewed]]*
+
 [^1]: Though this *has* some historical precedence for happening through physical isolation (e.g. Newton, Grothendieck, Pascal, Baldwin), I largely believe the lone genius myth is false. The lone genius is a proxy for being a hard worker but it isn't the only way of doing [[posts/pain-and-great-work|great work]].
 
 ---
