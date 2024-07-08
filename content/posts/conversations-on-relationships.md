@@ -50,7 +50,7 @@ Maybe this is silly, but I think that it is almost a pre-requisite to have thing
 
 *So you're saying that your shared history together is relative irrelevant compared to your current interests?*
 
-No, I don't think I'm saying that exactly either. I think having a lived life together is very important to add richness and depth to the relationship, but I don't think you can live fully off of what has existed in the past. You both have full lives ahead of you! Relative to the many decades you have left ahead of you, I think it makes sense to have these third things you both care about to make the life you will live in the future full and meaningful.
+No, I don't think I'm saying that exactly either. I think having a lived life together is very important to add richness and depth to the relationship, but I don't think you can live fully off of what has existed in the past. You both have full lives ahead of you! Relative to the many years left ahead, I think it makes sense to have these third things you both care about to make the life you will live in the future full and meaningful.
 
 *Hm. I still feel quite guilty about not being able to grow to see the world the same way. There's an ideal world in which it was easy to understand and love the same things. I remember we made a commitment to each other and it feels terribly selfish to go back on that. I want to be someone who is reliable — someone whose word people can depend on to plan their lives around.*
 
@@ -72,7 +72,7 @@ It seems like there are at least two ways you can think about this act of growin
 
 But don't you think there's a point where things become too different? I'm more of the camp that unconditional love does not necessarily imply unconditional tolerance. Just because a jigsaw puzzle piece will not fit naturally does not mean that you [jam it in with force because you think the end picture might be beautiful](https://www.startingfromnix.com/p/on-compatibility).
 
-*Well I think that's fair, there's no point in making something obviously wrong work. But I think it unfair to classify a serious relationship under obviously wrong. Isn't it enough for it to have been right at some point and to keep trying to get back to that.*
+*Well I think that's fair, there's no point in making something obviously wrong work. But I think it unfair to classify a serious relationship under obviously wrong. Isn't it enough for it to have been right at some point?*
 
 **[The waves wash away any footsteps left on the beach as the tide rises slowly.]**
 
@@ -90,7 +90,7 @@ It's funny that we get attached to the struggle isn't it? At some point, the fig
 
 Are you glad it happened? The relationship as a whole?
 
-*Of course. I appreciate the part of our life we spent together and I don't regret every decision we made it try. I think we lived it very fully throughout, even in the last moments. We are both people who don't half-ass things and I know that as soon as we felt like we couldn't put our full-selves in it, it was better to leave it in a good place than to drag a slow and resentful end out of it.*
+*Of course. I appreciate the part of our life we spent together and I don't regret every decision we made to try. I think we lived it very fully throughout, even in the last moments. We are both people who don't half-ass things and I know that as soon as we felt like we couldn't put our full selves in it, it was better to leave it in a good place than to drag a slow and resentful end out of it.*
 
 Mm.
 
