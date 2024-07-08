@@ -94,7 +94,7 @@ Are you glad it happened? The relationship as a whole?
 
 Mm.
 
-*On this hike through life, we had the courage to split ways when we knew the destination was in different destinations and still had the grace to acknowledge that the path we've already travelled together was beautiful.*
+*On this hike through life, we had the courage to split ways when we knew the destination was in different places and still had the grace to acknowledge that the path we've already travelled together was beautiful.*
 
 I'm really glad.
 
