@@ -108,6 +108,10 @@ Nussbaum on how over-reliance on intellect for clarity about love produces inste
 See also: 
 
 ![[thoughts/self-effacing ends|self-effacing ends]]
+
+
+![[thoughts/images/let-july-be-july.png|400]]
+Let July be July, *Morgan Harper Nichols*
 ## Social Energy
 [Source](https://maxlangenkamp.substack.com/p/on-social-energy)
 
