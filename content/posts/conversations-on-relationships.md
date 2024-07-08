@@ -20,7 +20,7 @@ Yeah. I know that can't have been an easy decision to make.
 
 **[The glow of the sunset slowly fades]**
 
-*Part of me feels scared of over-intellectualizing these feelings. I know exactly how I should **rationally** thinking about things or whatever the 'correct' feelings to have are but it sometimes feels frustrating that they don't always match up with what I'm actually feeling.*
+*Part of me feels scared of over-intellectualizing these feelings. I know exactly how I should **rationally** think about things or whatever the 'correct' feelings to have are but it sometimes feels frustrating that they don't always match up with what I'm actually feeling.*
 
 I think it's okay to just feel the emotions for what they are. A calculus of the heart will miss things and maybe even impede the recognition for what is truly being felt. It almost feels like a false sense of comforting yourself by pretending the real loss can be made with enough of something else (logic, reason, distraction)[^1]. What do you think you're actually feeling right now?
 
