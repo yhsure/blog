@@ -8,7 +8,7 @@ tags:
 ## _Captivating algorithms: Recommender systems as traps_
 
 Mason’s definition of a trap: ‘an invention for the purpose of
-inducing animals to commit incarceration, self-arrest, or suicide’ (p. 657) -- this is exactly what recommender systems get users to do: trap themselves in a viscous cycle.
+inducing animals to commit incarceration, self-arrest, or suicide’ (p. 657) -- this is exactly what recommender systems get users to do: trap themselves in a vicious cycle.
 
 Traps operate through 'scripted roles' -- the ability of the hunter to construct a mental model of its prey. It is not taking its [free will](thoughts/freedom.md) to make decisions, but rather manipulating it to its own demise. Recommender systems, Seaver posits, are thought-traps.
 

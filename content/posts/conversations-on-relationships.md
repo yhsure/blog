@@ -82,7 +82,7 @@ I don't think it's a clear black and white either. I _do_ think that there is so
 
 A lot of it is subtle but compounds. It might look like different ways that you process loss, the different ways you might want to be comforted or celebrated, and how you spend your idle hours. The more different they are, the more it feels either person needs to be more like the other to be appreciated or seen.
 
-*Yeah, I think I felt this in the tail end of the relationship. There was a flipping point where the extra interpretation was draining enough that it became hard to do the interpreting in the first place. It becomes a viscous cycle where it took energy to interpret, which made it less likely that we put in the effort to do it, which made it harder to have those shared third things, which caused even more of a drift.*
+*Yeah, I think I felt this in the tail end of the relationship. There was a flipping point where the extra interpretation was draining enough that it became hard to do the interpreting in the first place. It becomes a vicious cycle where it took energy to interpret, which made it less likely that we put in the effort to do it, which made it harder to have those shared third things, which caused even more of a drift.*
 
 It's funny that we get attached to the struggle isn't it? At some point, the fight to make things work itself became a part of the defining aspects of the relationship.
 
