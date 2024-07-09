@@ -215,7 +215,6 @@ export function renderPage(
     <html lang={lang}>
       <Head {...componentData} />
       <body data-slug={slug}>
-        <div id="texture"></div>
         <div id="quartz-root" class="page">
           <Body {...componentData}>
             {LeftComponent}
