@@ -4,9 +4,9 @@ date: 2022-12-07
 tags:
   - seed
 ---
-See also: [[thoughts/LLMs|LLMs]]
+See also: [[thoughts/LLMs|LLMs]], [[thoughts/NLP|NLP]]
 
-At a high-level, we can think of a transformer model as taking an input sequence of tokens of length $n$ and predicting the next token at index $n + 1$.
+At a high-level, we can think of a transformer model as taking an input sequence of tokens of length $n$ and predicting the next token at index $n + 1$. They generally excel at sequence-to-sequence modeling tasks.
 
 Most implementations of transformers are autoregressive, meaning that it predicts future values (index $n + 1$ to $\infty$) from past values (index $0$ to $n$).
 
@@ -22,11 +22,13 @@ The collection of all the tokens the model understands is its vocabulary. The vo
 - Token B: index 1
 - Token C: index 2
 
+This lookup table is usually trained or determined independently of the LMM itself. Most people use statistical methods based on the data to figure out a good lookup table. One common example of this is [[thoughts/Byte Pair Encoding|BPE]].
+
 The first step of a transformer is turning the input text into the appropriate index in the vocabulary table.
 
 Then, we use the token index to select the associated column in the **token embedding matrix** (e.g. the 3rd token index corresponds to the 3rd column of the token embedding matrix). The values of the token embedding matrix are vectors which we call the **token embeddings**. The token embedding matrix is $[C_\text{embed}, n_\text{vocab}]$ where $C_\text{embed}$ is the dimensionality of this embedding. 
 
-Then, based on the index of the token in the input, we use it to select an appropriate column of the **position embedding matrix**. The dimensionality of this is the same as $C_\text{embed}$. We need position embeddings because, unlike [[thoughts/LSTM|LSTMs]] which operate sequentially, Transformers operate over the whole input sequence at once so it loses information related to token order.
+Then, based on the index of the token in the input, we use it to select an appropriate column of the **position embedding matrix**. The dimensionality of this is the same as $C_\text{embed}$. We need position embeddings because, unlike RNNs and [[thoughts/LSTM|LSTMs]] which operate sequentially, Transformers operate over the whole input sequence at once so it loses information related to token order.
 
 > [!question]- Why can't we just use a column vector of what index the token is?
 > 
@@ -68,7 +70,7 @@ Then, based on the index of the token in the input, we use it to select an appro
 >   
 > The paper authors also experimented with learned positional embeddings and found similar performance but ultimately chose the sinusoidal version as it meant that the model can extrapolate to sequence lengths outside ones encountered in training.
 
-Token embeddings are learned during training whereas positional encodings can either be fixed or learned. As both embeddings have the same dimensionality, we simply perform an element-wise addition to get the **input embedding**.
+Token embeddings are learned during training whereas positional encodings can either be fixed or learned. As both embeddings have the same dimensionality, we simply perform an element-wise addition to get the **input [[thoughts/latent-factor model|embedding]]**.
 
 Running this for all $T$ of the input tokens gives us the input embedding matrix of size $[C_\text{embed}, T]$. This corresponds to a column vector $[C_\text{embed}, 1]$ for each token.
 
@@ -102,7 +104,7 @@ The first step is to produce three vectors for each of the $T$ columns from th
 
 $A$ is the dimensionality of the $Q$/$K$/$V$ vectors (it's convention to set $A = C_\text{embed} / n$ where $n$ is the number of attention heads). For each of $Q$, $K$, and $V$, we have associated learned values for the bias $[A, 1]$ and the weights $[A, C_\text{embed}]$.
 
-To compute $Q$, for example, we do $Q^WLN + Q^B$. Note that this matrix-vector addition isn't normally mathematically valid as we are adding a matrix of $[A,T]$ to a vector of $[A,1]$ but we treat it $Q^B$ as an $[A,T]$ matrix where each column is the original $[A,1]$ vector.
+To compute $Q$, for example, we do $Q^WLN + Q^B$ (where $Q^W$ are the weights of the query matrix and $Q^B$ are the biases of the query matrix). Note that this matrix-vector addition isn't normally mathematically valid as we are adding a matrix of $[A,T]$ to a vector of $[A,1]$ but we treat it $Q^B$ as an $[A,T]$ matrix where each column is the original $[A,1]$ vector.
 
 We can think of this as each self-attention block as a graph with $A$ nodes. Then,
 
