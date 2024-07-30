@@ -1,4 +1,4 @@
-import type { ContentDetails, ContentIndex } from "../../plugins/emitters/contentIndex"
+import type { ContentDetails } from "../../plugins/emitters/contentIndex"
 import * as d3 from "d3"
 import { registerEscapeHandler, removeAllChildren } from "./util"
 import { FullSlug, SimpleSlug, getFullSlug, resolveRelative, simplifySlug } from "../../util/path"
@@ -361,7 +361,7 @@ function renderGlobalGraph() {
 
 document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   const slug = e.detail.url
-  addToVisited(slug)
+  addToVisited(simplifySlug(slug))
   await renderGraph("graph-container", slug)
 
   const containerIcon = document.getElementById("global-graph-icon")
