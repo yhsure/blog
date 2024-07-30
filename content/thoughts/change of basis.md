@@ -54,7 +54,7 @@ Thus, computing $K$ is $O(n^2d + n^3)$:
 1. Forming $K$ takes $O(n^2d)$ time
 2. Inverting $K+\lambda I$ which is a $(n,n)$ takes $O(n^3)$
 
-All of our distance-based methods have kernel versions
+All of our distance-based methods have kernel versions.
 
 ## Learned Basis
 
