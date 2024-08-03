@@ -25,15 +25,16 @@ body[data-slug="thoughts/craft"] {
   & li:has(> img, > video) {
     list-style-type: none;
 
-    &>img, &>video {
+    & > img,
+    & > video {
       margin: 1rem 0;
     }
   }
 
-  article>ul {
+  article > ul {
     padding-left: 0;
 
-    &>li {
+    & > li {
       list-style-type: none;
       margin: 1rem 0;
     }
@@ -92,7 +93,7 @@ hr {
     margin: -1em 0 0.5em;
     font-size: 1.5em;
     padding: 0.5em 1em;
-  color: var(--gray);
+    color: var(--gray);
   }
 }
 
