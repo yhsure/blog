@@ -4,6 +4,8 @@ date: 2024-08-03
 tags:
   - seed
 ---
+An [[thoughts/Overlay Network|Overlay Network]] provider, "secure networks defined in software made easy"
+
 [Source](https://tailscale.com/blog/new-internet)
 
 > Tailscale makes the Internet work how you thought the Internet worked, before you learned how the Internet works.
