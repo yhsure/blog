@@ -137,5 +137,5 @@ Reviewing the second edition by *Martin Kleppmann*. This is the first book I'm h
 - Good history of SQL and NoSQL, contextualizes a lot of the next chapter!
 - Explain the fundamentals behind an index. What is it precomputing, how do I know if I need one?
 - Upper size of a table? How big is too big?
-	- I see a lot of HN discussion about "what is too big" and how tailscale at one point was using [a big JSON file to store everything](https://tailscale.com/blog/an-unlikely-database-migration)
+	- I see a lot of HN discussion about "what is too big" and how [[thoughts/Tailscale|Tailscale]] at one point was using [a big JSON file to store everything](https://tailscale.com/blog/an-unlikely-database-migration)
 - No major comments here, content is excellent and clear
