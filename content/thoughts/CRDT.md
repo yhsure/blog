@@ -95,7 +95,7 @@ How can we make CRDTs [[thoughts/Byzantine Faults|Byzantine fault-tolerant]]?
 
 CRDTs can become BFT by ensuring eventual delivery and convergence even in the presence of Byzantine nodes.
 
-The main construct here is constructing a hash graph (aka a [[thoughts/Merkle-DAG|Merkle-DAG]]): The graph is essentially the Hasse diagram of the partial [[thoughts/Order theory|order]] representing the [[thoughts/causality|causality]] relation among the updates. The ID of an operation is the hash of the update containing that operation. A 'head' is just an operation which is not a dependency of another operation.
+The main construct here is constructing a hash graph (aka a [[thoughts/Merkle-DAG|Merkle-DAG]]): The graph is essentially the [[thoughts/Order theory#Hasse Diagram]] of the partial [[thoughts/Order theory|order]] representing the [[thoughts/causality|causality]] relation among the updates. The ID of an operation is the hash of the update containing that operation. A 'head' is just an operation which is not a dependency of another operation.
 
 1. This hash graph helps to ensure eventual consistency as two nodes $p$ and $q$ can exchange the hashes of their currents heads and if they are identical, they can ensure the set of updates they have observed is also identical.
 2. If the heads of $p$ and $q$ are mismatched, the nodes can run a graph traversal algorithm to determine which parts of the graph they have in common, and send each other those parts of the graph that the other node is lacking.
@@ -131,11 +131,26 @@ See also: [[thoughts/Antimatter]]
 
 Upgrading network assumption from asynchronous to partially synchronous enables us to potentially define _weak operations_ which only _eventually_ need to be linearized.
 
-## Unsolved Problems
+## Move Operations
+[Source](https://loro.dev/blog/movable-tree#background)
 
-- Concurrent move + edit in sequences is unsolved
-  - Almost all implementations cause duplication
-  - [Fugue](https://mattweidner.com/2022/10/21/basic-list-crdt.html)
+Generally a difficult problem because the naive move operation needs to ensure global invariants (a node cannot be concurrently moved to two different places) and we know that under [[thoughts/I-Confluence|I-Confluence]], this is impossible with a CRDT.
+
+![[thoughts/images/move-cycle.png]]*Source from Loro.dev*
+
+Loro solves this by combining the three tree operations (create, delete, move) into a single move operation represented as a 4-tuple (`Move t p m c`):
+- `t`: Lamport timestamp
+- `p`: parent node ID
+- `m`: data/metadata
+- `c`: child node ID
+
+- If `c` is unique, the `Move` operation creates a child `c` under `p`
+- Otherwise, the operation moves `c` from original parent to `p`
+- Deletes are modeled as a move to a special parent `p` `TRASH`
+
+Now that delete is a move, the only remaining problem is about how to introduce and hold global invariants. Loro solves this using undo-replay.
+
+If at any time it receives an operation `op` that is _older_ than what it knows about, it will undo all operations that are newer than `op`, apply `op`, and then replay the undone operations.
 
 ## Readings
 
