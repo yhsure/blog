@@ -7,7 +7,7 @@ tags:
 
 Martin Kleppmann and Heidi Howard: _[Byzantine Eventual Consistency and the Fundamental Limits of Peer-to-Peer Databases](https://arxiv.org/pdf/2012.00472.pdf)_
 
-$\mathcal I$-confluence is a necessary and sufficient condition for the existence of a [[thoughts/Byzantine Faults|byzantine fault-tolerant]] eventual consistency replication algorithm
+$\mathcal I$-confluence is a necessary and sufficient condition for the existence of a [[thoughts/Byzantine Faults|byzantine fault-tolerant]] [[thoughts/consistency#Eventual Consistency|eventual consistency]] [[thoughts/replication|replication]] algorithm
 
 They define an invariant is a predicate over replica states, i.e. a function $I(S)$ that takes a replica state $S$ and returns either true or false.
 

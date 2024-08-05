@@ -23,7 +23,7 @@ A join semi-lattice essentially is a topological sort or [[thoughts/causality#Ca
 
 See also: [[thoughts/Order theory]]
 
-![[thoughts/images/hasse diagram.png|300]]
+![[thoughts/Order theory#Hasse Diagram]]
 
 ## As the fabric of living things
 

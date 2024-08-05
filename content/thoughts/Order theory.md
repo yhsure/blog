@@ -31,6 +31,7 @@ When it comes to [[thoughts/CRDT|CRDTs]], what we’re looking for is the abilit
 
 A join [[thoughts/A City is not a Tree#Semilattices|semi-lattice]] then essentially does a topological sort or [[thoughts/causality#Causal Order|causal ordering]] of its elements except all of the elements can be joined (i.e. have a single shared ancestor)
 
+## Hasse Diagram
 We can illustrate the [[thoughts/semilattice|semi-lattice]] using a Hasse Diagram
 
 ![[thoughts/images/hasse diagram.png|300]]

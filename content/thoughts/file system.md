@@ -35,7 +35,7 @@ Interesting to note: in big data processing, the same operation is repeatedly ap
 
 [Source](https://hal.inria.fr/hal-03278658/document)
 
-The design of ElmerFS leverages the properties of [[thoughts/CRDT|CRDTs]]) to ensure that concurrent operations on different replicas always converge to a correct state while preserving the semantics of a traditional POSIX file system
+The design of ElmerFS leverages the properties of [[thoughts/CRDT|CRDTs]] to ensure that concurrent operations on different replicas always converge to a correct state while preserving the semantics of a traditional POSIX file system
 
 Challenges
 
