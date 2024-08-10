@@ -57,6 +57,7 @@ tags:
 - https://www.socratica.info/: fun use of mixed fonts and print screen graphics
 - https://nicochilla.com/
 - https://jacobleech.com/
+- https://daylightcomputer.com/
 
 ## Poetic/Conceptual
 
