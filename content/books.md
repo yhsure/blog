@@ -32,6 +32,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 - **are we human? notes on an archaeology of design** by Beatriz Colomina & Mark Wigley
 - **The Unbearable Lightness of Being** by Milan Kundera
 - **Dancing on the Ceiling: Art & Zero Gravity** by Kathleen *Forde*
+- **[Notes on the Synthesis of Form](https://monoskop.org/images/f/ff/Alexander_Christopher_Notes_on_the_Synthesis_of_Form.pdf)** by Christopher Alexander
 
 ### Poetry
 
@@ -44,6 +45,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ### 2024
 
+- **[[thoughts/Bluets|Bluets]]** by Maggie Nelson
 - **[[thoughts/Alexandre Grothendieck#Reflection and testimony on a past as a mathematician|Récoltes et Semailles]]** by Alexandre Grothendieck
 
 ### 2023
