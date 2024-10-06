@@ -58,6 +58,7 @@ tags:
 - https://nicochilla.com/
 - https://jacobleech.com/
 - https://daylightcomputer.com/
+- https://departuremono.com/: great information hierarchy and visual identity
 
 ## Poetic/Conceptual
 
