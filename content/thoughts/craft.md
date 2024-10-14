@@ -127,6 +127,7 @@ The following list of writing that I've had the immense fortune of being able to
 - [Playspace](http://playspace.club/) (2024-)
 	- Weekly co-working and co-learning sessions inspired by [Socratica](https://www.socratica.info/).
 	- [Scrapbook of all of our fun projects!](https://scrapbook.playspace.club/)
+	- See also, our [[thoughts/Playspace#Retro Notes|retro log]]
 	- ![[thoughts/images/playspace.png]]
 - Saturdays (2023)
 	- Weekly co-working sessions at UBC inspired by [Socratica](https://www.socratica.info/).
