@@ -101,3 +101,40 @@ Requirements:
 - Transport independence
 - General efficiency: peers can make use of efficient implementation techniques, and the overall bandwidth consumption stays low
 
+### 3D Range-based Set Reconciliation
+
+1. To reconcile two sets, one peer first computes a hash over all items in its set, and sends this fingerprint to the other peer. That peer then computes the fingerprint over its items as well. If the fingerprints match, they are done reconciling.
+2. If they do not match, there are two options.
+	1. First, the peer can split its set in half and then initiate set reconciliation for each half concurrently (by transmitting its hashes for both halves).
+	2. Second, if the set is sufficiently small, the peer can instead simply transmit its items in the set. The other peer responds to this with all other items that it held in the set, completing the process of reconciliation.
+
+## Capabilities System
+[Source](https://willowprotocol.org/specs/meadowcap/index.html#meadowcap)
+
+When interacting with a peer in Willow, there are two fundamental operations:
+1. writing data — asking your peer to add `Entries` to their stores, and
+2. reading data — asking your peer to send `Entries` to you
+
+Both operations should be restricted. In Willow, this is done via a [[thoughts/access control|capabilities system]] called Meadowcap.
+
+A capability is an unforgeable token that bestows read or write access for some data to a particular person, issued by the owner of that data. A capability bestows not only access rights but also the ability to mint new capabilities for the same resources but to another peer
+
+### Capability Delegation
+
+A capability bestows not only access rights but also the ability to mint new capabilities for the same resources but to another peer.
+
+Consider Alfie and Betty, each holding a key pair. Alfie can mint a new capability for Betty by signing his own capability together with her public key: `sign(capability + betty.pub_key, alfie.priv_key)`
+
+Note that capability can be turned into a *more restrictive subset*.
+
+## Encrypted Willow
+
+- Payloads:
+	1. Append a nonce to each plaintext (so that equal plaintexts at different paths have different digests)
+	2. Apply some padding to a prespecified length (so that the length of the plaintext is not leaked)
+	3. Encrypt the result (so that the contents stay confidential), and
+	4. Use the resulting cyphertext as a [Payload](https://willowprotocol.org/specs/data-model/index.html#Payload)
+- Computing [joins](https://willowprotocol.org/specs/data-model/index.html#store_join) of [stores](https://willowprotocol.org/specs/data-model/index.html#store) necessitates comparing [Timestamps](https://willowprotocol.org/specs/data-model/index.html#Timestamp) numerically.
+	- Willow deals in plaintext Timestamps only.
+	- Unfortunately this still leaks information (i.e. it isn't indistinguishable from random data)
+	- There is work around order-preserving encryption

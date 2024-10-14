@@ -15,6 +15,8 @@ Friendship as witnesses to eudaimonic well-being.
 
 adrienne maree brown described relationships like a spiderweb—diaphanous yet strong, thick yet porous. “A web allows things to fall through, like a sieve,” she said. “Some things are not meant to be caught.”
 
+_“Love is the quality of attention we pay to things,”_ poet J.D. McClatchy wrote in his beautiful meditation on [the contrast and complementarity of love and desire](https://www.themarginalian.org/2018/04/26/j-d-mcclatchy-love-speaks-its-name/)
+
 Related: [Tribe flourishing](thoughts/tribe%20flourishing.md)
 
 ## Overoptimization

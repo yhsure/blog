@@ -1,8 +1,10 @@
 ---
-title: "Access control"
+title: Access control
 date: 2022-08-16
 tags:
   - seed
+aliases:
+  - capabilities system
 ---
 
 > Access control systems guarantee that every action performed adheres to a set of rules, which can be dynamically changed at runtime.

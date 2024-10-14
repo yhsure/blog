@@ -74,7 +74,7 @@ Play allows us to create and share in ways that competitive environments disince
 	- Come up with a question of the day! It should be a little whimsical but also give good threads for people to have follow up conversations on
 		- Here's a [good starting point](https://docs.google.com/document/d/1K_iFxFt9lh1i0mxKRIhOSd2e8X1LNvxnihbChKXhyOc/edit)!
 	- Up to the host as to how to split the intro circles
-		- Generally, its good to do something that splits up groups of people who came together; we want people to mingle and make new friends!
+		- Generally, it's good to do something that splits up groups of people who come together; we want people to mingle and make new friends!
 - During the session
 	- Always hard-start 15min after stated start time
 	- Intro + Intro circles

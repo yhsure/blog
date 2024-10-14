@@ -169,3 +169,11 @@ From: [Stories that use time to hurt you](https://www.youtube.com/watch?v=e-ZK1A
 > thinking, art, or science of an earlier time is inherently inferior to that of the present, simply by virtue of its temporal priority or the belief that since civilization has advanced in certain areas, people of earlier periods were less intelligent
 
 The term was coined by C. S. Lewis and Owen Barfield, and first mentioned by Lewis in his 1955 autobiographical work, _Surprised by Joy_.
+
+## On the Nature of Time
+[Source](https://writings.stephenwolfram.com/2024/10/on-the-nature-of-time/)
+
+Stephen Wolfram thinks about time as the "progressive doing of computation by the universe."
+
+But it's not as simple as just replacing a "time coordinate" with a computational step count (e.g. [[thoughts/clocks|logical clocks]]). Computational irreducibility will say that there's often essentially no better way to find what a system will do than by explicitly tracing through each step in its evolution.
+
