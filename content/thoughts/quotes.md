@@ -37,3 +37,4 @@ Some quotes to live by.
 28. “If you want to build a ship, don’t drum up people to collect wood and don’t assign them tasks and work, but rather teach them to long for the endless immensity of the sea." (Antoine de Saint Exupéry)
 29. “It is necessary to any originality to have the courage to be an amateur.” (Wallace Stevens)
 30. ![[thoughts/Alexandre Grothendieck#^cfd6c7]]
+31. 

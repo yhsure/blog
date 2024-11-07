@@ -58,6 +58,13 @@ Based off of the above:
 - 6-7 world-wide round trips per second
 - 2,000 round trips per second within a data center
 
+## On Good Systems Papers
+
+> Good systems papers often put forth an argument of the flavor:
+> 
+> _“We are looking to achieve the goals A, B, C, under the constraints X, Y, Z. No system existed to do so when we set out on our efforts (otherwise we probably would have used it!), so from our experiences building systems in this area, we can distill these experiences into a specific set of system requirements. These requirements may not be obvious to readers who have not spent considerable time thinking about or building applications in this space.”_
+
+[Source](https://graphics.stanford.edu/~kayvonf/notes/systemspaper/)
 ## Real-time
 
 - WebRTC
