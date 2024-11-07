@@ -24,6 +24,9 @@ Self-determination theory suggests that all humans have three basic psychologica
 
 See also: [[thoughts/In Over Our Heads]], [[thoughts/burnout]], [[thoughts/taste]]
 
+### Cultural
+
+In a 2017 study, compared to Democrats, US Republicans predictably attributed a person's wealth to their having "worked harder" versus their having "had advantages in life," and they attributed their poverty to "lack of effort" over "circumstances beyond [their] control"
 ## In software
 
 4 Principles, [Brooklyn Zelenka at Causal Islands](https://youtu.be/YKf5ItBPQ50?t=3975)

@@ -33,6 +33,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 - **The Unbearable Lightness of Being** by Milan Kundera
 - **Dancing on the Ceiling: Art & Zero Gravity** by Kathleen *Forde*
 - **[Notes on the Synthesis of Form](https://monoskop.org/images/f/ff/Alexander_Christopher_Notes_on_the_Synthesis_of_Form.pdf)** by Christopher Alexander
+- **Practical Reason: On the Theory of Action** by Pierre Bourdieu
 
 ### Poetry
 
@@ -40,11 +41,11 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 ## Current
 
 - **The Dream Machine** by M. Mitchell Waldrop
-- **Saving Time, Discovering a Life Beyond the Clock** by Jenny Odell
 ## Past
 
 ### 2024
 
+- **[[thoughts/Saving Time|Saving Time]]** by Jenny Odell
 - **[[thoughts/Bluets|Bluets]]** by Maggie Nelson
 - **[[thoughts/Alexandre Grothendieck#Reflection and testimony on a past as a mathematician|Récoltes et Semailles]]** by Alexandre Grothendieck
 

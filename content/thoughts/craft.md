@@ -37,8 +37,9 @@ My (considerably longer) list of unfinished ideas can be found [here](thoughts/i
 
 - **ruspty** (2024)
 	- Wrote large chunks of the core library code in Rust which allows consumers in Node.js and Bun to create [[thoughts/terminal|pseudoterminal]] file descriptors for forked processes.
-	- This, in conjunction with River (below), allowed us to see a ~60x improvement in shell throughput. This means we can output all of Shakespeare's collected works in about ~1s instead of 67s!
+	- This, in conjunction with River (below), allowed us to see a ~200x improvement in shell throughput. This means we can output all of Shakespeare's collected works in about ~.2s instead of 67s!
 	- Source: [GitHub](https://github.com/replit/ruspty)
+	- Blog post: [Replit Blog](https://blog.replit.com/shell2)
 	- ![[thoughts/images/shell-comparison.png]]
 - **River** (2023)
 	- Designed and implemented River, a framework for long-lived streaming Remote Procedure Calls (RPCs) in modern web applications, featuring advanced error handling and customizable retry policies to ensure seamless communication between clients and servers. River is Replit's main communication protocol, powering the workspace editor and AI chat.
