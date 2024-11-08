@@ -1,8 +1,0 @@
-{
-  "newLinkFormat": "absolute",
-  "newFileLocation": "folder",
-  "newFileFolderPath": "thoughts",
-  "attachmentFolderPath": "thoughts/images",
-  "alwaysUpdateLinks": true,
-  "promptDelete": false
-}
