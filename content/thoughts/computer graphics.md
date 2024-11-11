@@ -38,6 +38,8 @@ The translation from $P_A$ to $P_B$ can be represented as $P_B = O_A + x_Ai_A + 
 - `Scale(x,y,z)`
   - $$\begin{bmatrix}x' \\ y' \\ z' \\ 1 \end{bmatrix} = \begin{bmatrix}a & & & \\ & b & & \\ & & c & \\ & & & 1\end{bmatrix}\begin{bmatrix}x \\ y \\ z \\ 1\end{bmatrix}$$
 
+See also: [[thoughts/homography|homography]]
+
 ### Transformations
 
 1. Object Coordinate System: modeling transformation
