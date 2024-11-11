@@ -4,7 +4,7 @@ tags:
   - evergreen
 ---
 
-<img src="./banner.svg" width="701" height="183">
+<img src="./banner.svg" width="701" height="175">
 
 ```poetry
 Welcome!

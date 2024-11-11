@@ -14,6 +14,10 @@ body {
   font-synthesis: none;
 }
 
+img[src*="banner.svg"] {
+  opacity: 0.8;
+}
+
 [saved-theme="dark"] body[data-slug="index"] img[src*="banner.svg"] {
   filter: invert(100%);
 }
@@ -113,6 +117,47 @@ audio::-webkit-media-controls-panel {
 
 #quartz-root {
   isolation: isolate;
+}
+
+// fade-in elements
+#quartz-body {
+  [saved-theme="dark"] & {
+    --animation-name: fade2;
+  }
+
+  [saved-theme="light"] & {
+    --animation-name: fade;
+  }
+
+  @for $i from 1 through 4 {
+    @for $j from 1 through 8 {
+      & > *:nth-child(#{$i}) > *:nth-child(#{$j}) {
+        animation: var(--animation-name) 2s ease 1 normal backwards;
+        animation-delay: #{0.1 * $j + 0.3 * $i}s;
+      }
+    }
+  }
+}
+
+// hack to duplicate the fade-in animation so that we reset the animation in both directions
+@keyframes fade {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes fade2 {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
 }
 
 // dappled light
