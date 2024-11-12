@@ -11,7 +11,9 @@ body[data-slug="index"] img {
 body {
   position: relative;
   min-height: 100vh;
-  font-synthesis: none;
+
+  // only allow synthesizing italics but not bold
+  font-synthesis: style;
 }
 
 img[src*="banner.svg"] {
