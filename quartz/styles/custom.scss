@@ -26,16 +26,16 @@ body[data-slug="thoughts/craft"] {
   & li:has(> img, > video) {
     list-style-type: none;
 
-    &>img,
-    &>video {
+    & > img,
+    & > video {
       margin: 1rem 0;
     }
   }
 
-  article>ul {
+  article > ul {
     padding-left: 0;
 
-    &>li {
+    & > li {
       list-style-type: none;
       margin: 1rem 0;
     }
@@ -133,7 +133,7 @@ audio::-webkit-media-controls-panel {
     @for $j from 1 through 8 {
       & > *:nth-child(#{$i}) > *:nth-child(#{$j}) {
         animation: var(--animation-name) 2s ease 1 normal backwards;
-        animation-delay: #{0.1 * $j + 0.3 * $i}s;
+        animation-delay: #{0.1 * $j + 0.4 * $i}s;
       }
     }
   }
@@ -142,21 +142,21 @@ audio::-webkit-media-controls-panel {
 // hack to duplicate the fade-in animation so that we reset the animation in both directions
 @keyframes fade {
   0% {
-    opacity: 0
+    opacity: 0;
   }
 
   100% {
-    opacity: 1
+    opacity: 1;
   }
 }
 
 @keyframes fade2 {
   0% {
-    opacity: 0
+    opacity: 0;
   }
 
   100% {
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -169,6 +169,7 @@ audio::-webkit-media-controls-panel {
   position: fixed;
   height: 100vh;
   width: 100vw;
+  isolation: isolate;
 
   --day: #fffdfa;
   --evening: #fccc83;
@@ -179,7 +180,7 @@ audio::-webkit-media-controls-panel {
 
   --shadow: #1a1917;
   --bounce-light: #f5d7a6;
-  --timing-fn: cubic-bezier(0.455, 0.190, 0.000, 0.985);
+  --timing-fn: cubic-bezier(0.455, 0.19, 0, 0.985);
 
   body.animation-ready & {
     animation-play-state: running;
@@ -188,7 +189,7 @@ audio::-webkit-media-controls-panel {
   }
 
   [saved-theme="dark"] body.animation-ready & {
-    animation-duration: 1.7s;
+    animation-duration: 1.5s;
     animation-name: sunset;
   }
 
@@ -197,40 +198,34 @@ audio::-webkit-media-controls-panel {
     --bounce-light: #1b293f;
   }
 
-  &>#progressive-blur {
+  & > #progressive-blur {
     position: absolute;
     height: 100%;
     width: 100%;
 
-    &>div {
+    & > div {
       position: absolute;
       height: 100%;
       width: 100%;
       backdrop-filter: blur(var(--blur-amount));
-      mask-image: linear-gradient(252deg, transparent, transparent var(--stop1), black var(--stop2), black);
+      mask-image: linear-gradient(
+        252deg,
+        transparent,
+        transparent var(--stop1),
+        black var(--stop2),
+        black
+      );
 
       &:nth-child(1) {
-        --blur-amount: 6px;
+        --blur-amount: 8px;
         --stop1: 0%;
         --stop2: 0%;
       }
 
       &:nth-child(2) {
-        --blur-amount: 12px;
-        --stop1: 40%;
-        --stop2: 80%;
-      }
-
-      &:nth-child(3) {
-        --blur-amount: 48px;
-        --stop1: 40%;
-        --stop2: 70%;
-      }
-
-      &:nth-child(4) {
-        --blur-amount: 96px;
-        --stop1: 70%;
-        --stop2: 80%;
+        --blur-amount: 72px;
+        --stop1: 30%;
+        --stop2: 60%;
       }
     }
   }
@@ -238,7 +233,7 @@ audio::-webkit-media-controls-panel {
   #glow {
     position: absolute;
     background: linear-gradient(309deg, var(--bounce-light), var(--bounce-light) 20%, transparent);
-    transition: background 1.0s var(--timing-fn);
+    transition: background 1s var(--timing-fn);
     height: 100%;
     width: 100%;
     opacity: 0.5;
@@ -248,16 +243,18 @@ audio::-webkit-media-controls-panel {
     content: "";
     position: absolute;
     background: linear-gradient(355deg, var(--bounce-light) 0%, transparent 30%, transparent 100%);
-    transition: background 1.0s var(--timing-fn);
+    transition: background 1s var(--timing-fn);
     opacity: 0.5;
     height: 100%;
     width: 100%;
     bottom: 0;
   }
 
-  &>.perspective {
+  & > .perspective {
     position: absolute;
-    transition: transform 1.7s var(--timing-fn), opacity 4s ease;
+    transition:
+      transform 1.7s var(--timing-fn),
+      opacity 4s ease;
     top: -30vh;
     right: 0;
     width: 80vw;
@@ -266,17 +263,11 @@ audio::-webkit-media-controls-panel {
     background-blend-mode: darken;
     transform-origin: top right;
     transform-style: preserve-3d;
-    transform: matrix3d(0.7500, -0.0625, 0.0000, 0.0008,
-        0.0000, 1.0000, 0.0000, 0.0000,
-        0.0000, 0.0000, 1.0000, 0.0000,
-        0.0000, 0.0000, 0.0000, 1.0000);
+    transform: matrix3d(0.75, -0.0625, 0, 0.0008, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 
     [saved-theme="dark"] & {
       opacity: 0.3;
-      transform: matrix3d(0.8333, 0.0833, 0.0000, 0.0003,
-          0.0000, 1.0000, 0.0000, 0.0000,
-          0.0000, 0.0000, 1.0000, 0.0000,
-          0.0000, 0.0000, 0.0000, 1.0000);
+      transform: matrix3d(0.8333, 0.0833, 0, 0.0003, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     }
   }
 
@@ -289,7 +280,7 @@ audio::-webkit-media-controls-panel {
     width: 1600px;
     height: 1400px;
     background-image: url("/static/leaves.png");
-    filter: url(#wind);
+    perspective: 400px;
     animation: billow 8s ease-in-out infinite;
   }
 
@@ -305,7 +296,7 @@ audio::-webkit-media-controls-panel {
     & .shutter {
       width: 100%;
       height: 40px;
-      transition: height 1.0s var(--timing-fn);
+      transition: height 1s var(--timing-fn);
 
       [saved-theme="dark"] & {
         height: 80px;
@@ -317,14 +308,14 @@ audio::-webkit-media-controls-panel {
       flex-direction: column;
       align-items: end;
       gap: 60px;
-      transition: gap 1.0s var(--timing-fn);
+      transition: gap 1s var(--timing-fn);
 
       [saved-theme="dark"] & {
         gap: 20px;
       }
     }
 
-    &>.vertical {
+    & > .vertical {
       top: 0;
       position: absolute;
       height: 100%;
@@ -332,13 +323,12 @@ audio::-webkit-media-controls-panel {
       display: flex;
       justify-content: space-around;
 
-      &>.bar {
-        width: 5;
+      & > .bar {
+        width: 12px;
         height: 100%;
       }
     }
   }
-
 }
 
 @keyframes sunrise {
@@ -383,22 +373,22 @@ audio::-webkit-media-controls-panel {
 
 @keyframes billow {
   0% {
-    transform: perspective(400px) rotateX(0deg) rotateY(0deg) scale(1);
+    transform: rotateX(0deg) rotateY(0deg) scale(1);
   }
 
-  25% {
-    transform: perspective(400px) rotateX(1deg) rotateY(2deg) scale(1.02);
+  18% {
+    transform: rotateX(1deg) rotateY(2deg) scale(1.03);
   }
 
-  50% {
-    transform: perspective(400px) rotateX(-4deg) rotateY(-2deg) scale(0.97);
+  32% {
+    transform: rotateX(-4deg) rotateY(-2deg) scale(0.96);
   }
 
-  75% {
-    transform: perspective(400px) rotateX(1deg) rotateY(-1deg) scale(1.04);
+  66% {
+    transform: rotateX(3deg) rotateY(-1deg) scale(1.04);
   }
 
   100% {
-    transform: perspective(400px) rotateX(0deg) rotateY(0deg) scale(1);
+    transform: rotateX(0deg) rotateY(0deg) scale(1);
   }
 }
