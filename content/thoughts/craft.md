@@ -15,6 +15,10 @@ My (considerably longer) list of unfinished ideas can be found [here](thoughts/i
 
 ## Web Poetics
 
+- Sunlit, a pure CSS implementation of light streaming through the window (2024)
+	- Experiments in making a website feel more 'lived in'. Fun with `matrix3d`, progressive blur, SVG filters, and sunrise/sunsets.
+	- Source: [GitHub](https://github.com/jackyzha0/sunlit)
+	- <video class="lazy" data-src="/thoughts/images/sunlit.webm" autoplay loop muted></video>
 - Community Lock Screen Collage, digital installation for [Kernel 4](https://www.kernelmag.io/issues/4) Launch Party (2024)
 	- What would it be like to live with someone else's lock screen for a day? Participants are invited to upload their own lockscreen and download someone else's. The uploaded lockscreens are arranged to create a stylized version of the Kernel 4 cover.
 	- This installation asks two separate questions: 1) what do people choose to hold onto and consciously pay attention to? 2) how might the personal be a touchstone of connection to create a larger collective whole?
