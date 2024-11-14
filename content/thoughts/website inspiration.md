@@ -28,6 +28,8 @@ tags:
 - https://taliacotton.com/: hover over letters
 - https://jessmart.in/: map site
 - https://archive.jakedowsmith.com/rosemarybutcher.com/: history bar
+- https://www.yihui.work/: cards
+- https://andrewtrousdale.com/: map
 
 ## Aesthetics
 
@@ -59,6 +61,7 @@ tags:
 - https://jacobleech.com/
 - https://daylightcomputer.com/
 - https://departuremono.com/: great information hierarchy and visual identity
+- https://bradleyziffer.com/
 
 ## Poetic/Conceptual
 
