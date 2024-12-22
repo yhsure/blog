@@ -18,6 +18,7 @@ const config: QuartzConfig = {
     baseUrl: "jzhao.xyz",
     ignorePatterns: ["private", "templates"],
     defaultDateType: "created",
+    generateSocialImages: false,
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
