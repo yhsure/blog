@@ -34,17 +34,19 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 - **Dancing on the Ceiling: Art & Zero Gravity** by Kathleen *Forde*
 - **[Notes on the Synthesis of Form](https://monoskop.org/images/f/ff/Alexander_Christopher_Notes_on_the_Synthesis_of_Form.pdf)** by Christopher Alexander
 - **Practical Reason: On the Theory of Action** by Pierre Bourdieu
+- **The Dream Machine** by M. Mitchell Waldrop
 
 ### Poetry
 
 - **Without** by David Hall
 ## Current
 
-- **The Dream Machine** by M. Mitchell Waldrop
+- na
 ## Past
 
 ### 2024
 
+- **Almond** by Sohn Won-pyung
 - **[[thoughts/Saving Time|Saving Time]]** by Jenny Odell
 - **[[thoughts/Bluets|Bluets]]** by Maggie Nelson
 - **[[thoughts/Alexandre Grothendieck#Reflection and testimony on a past as a mathematician|Récoltes et Semailles]]** by Alexandre Grothendieck
