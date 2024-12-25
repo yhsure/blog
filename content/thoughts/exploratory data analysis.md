@@ -24,9 +24,7 @@ How do we "look" at features and high-dimensional examples?
        - Range
        - Variance
        - Interquartile ranges
-   - Entropy: measured "randomness" of a set of variables where entropy is $- \Sigma_{c=1}^k p_c \log p_c$ and $p_c$ is the proportion of times you have value $c$, range from $[0, \log k]$
-     - Low entropy means it is very predictable whereas high entropy means it is very unpredictable (roughly, spread)
-     - Normal distribution has the _highest_ entropy
+   - [[thoughts/entropy|Entropy]]
    - [Not always representative](https://blog.revolutionanalytics.com/2017/05/the-datasaurus-dozen.html)! Don't mistake the map for the territory
 2. Distance or similarities
    - Hamming distance: number of times elements aren't equal

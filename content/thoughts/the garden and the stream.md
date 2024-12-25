@@ -9,7 +9,7 @@ tags:
 
 ## The Garden
 
-A garden is a metaphor for a lot of things: growth, persistence, and the constant battle against entropy.
+A garden is a metaphor for a lot of things: growth, persistence, and the constant battle against [[thoughts/entropy|entropy]].
 
 The Garden is an old metaphor associated with [[thoughts/hypertext]].
 

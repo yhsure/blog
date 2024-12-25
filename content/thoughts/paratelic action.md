@@ -1,5 +1,5 @@
 ---
-title: "paratelic action"
+title: Paratelic Action
 date: 2023-04-01
 tags:
   - seed

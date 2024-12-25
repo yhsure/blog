@@ -24,7 +24,7 @@ There is no permanence to this universe. If we could stop time, we would. Bill W
 
 I think that's what gives life its beauty -- its scarcity. If one could live forever and do everything they could ever want, why wouldn't they choose it[^1]? We value the time of others because we know that is finite. *Life* has meaning because it is finite.
 
-Love then is _knowingly_ choosing the losing side. What is love but the constant battle against entropy that drives everything apart and strips it of its salience? What greater project is there, in an unbearable time, in a perpetual future, where nothing stops? In a society that never stops, isn't loving the ultimate form of protest? To be able to be whole in your existence, to share your time on this little piece of rock drifting through space together?
+Love then is _knowingly_ choosing the losing side. What is love but the constant battle against [[thoughts/entropy|entropy]] that drives everything apart and strips it of its salience? What greater project is there, in an unbearable time, in a perpetual future, where nothing stops? In a society that never stops, isn't loving the ultimate form of protest? To be able to be whole in your existence, to share your time on this little piece of rock drifting through space together?
 
 Companionship is valuable because it affords the opportunity to feel 'seen' by another. We can only, according to Nathaniel Braden, view ourselves conceptually but we need others to view ourselves perceptually. Other consciousnesses function like a mirror -- being seen in this way is recognition of personhood. The feeling of being seen is psychological visibility. Love then, is witness through it all.
 

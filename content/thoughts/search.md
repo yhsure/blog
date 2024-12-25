@@ -132,7 +132,7 @@ Similar to practices in [reflect](thoughts/reflect.md) NLP processing actually!
 - Transformations
   - Case folding: convert all to lower case
   - Stopwords: remove words that contribute semantic meaning/indexing value
-    - e.g. words that don't reduce information entropy
+    - e.g. words that don't reduce information [[thoughts/entropy|entropy]]
     - for example, words that appear in _all_ documents are not very helpful
     - zipf's law, first ~5% are stop words, next ~45% are meaning content words and the last ~50% are long tail rare words
   - Stemming: grouping of related words (e.g. cats/cattiness -> cat)
