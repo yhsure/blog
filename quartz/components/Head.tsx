@@ -122,6 +122,7 @@ export default (() => {
     const baseDir = fileData.slug === "404" ? path : pathToRoot(fileData.slug!)
 
     const iconPath = joinSegments(baseDir, "static/icon.png")
+    const fontStylePath = joinSegments(baseDir, "static/font/font-style.css")
 
     const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
     // "static/social-images/slug-filename.md.webp"
@@ -196,6 +197,7 @@ export default (() => {
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
+        <link href={fontStylePath} rel="stylesheet" type="text/css" spa-preserve />
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js
           .filter((resource) => resource.loadTime === "beforeDOMReady")
