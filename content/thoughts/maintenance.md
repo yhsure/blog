@@ -54,7 +54,7 @@ As Nikhil Anand writes in _Hydraulic City_, "The maintenance of water infrastruc
 
 We should always ask: what, exactly, is being maintained? “Is it the thing itself,” Graham and Thrift ask, “or the negotiated order that surrounds it, or some ‘larger’ entity?” Often the answer is all of the above.
 
-We should also remember that the preservation of our world — the human one — is sometimes at odds with caring for the ecological context. Perhaps not every road _should_ be repaired. Geographer Caitlin DeSilvey encourages us to embrace entropy within the built world, to ask ourselves _for whom_ we engage in preservation, and to consider cultivating an acceptance of “curated decay” where appropriate.
+We should also remember that the preservation of our world — the human one — is sometimes at odds with caring for the ecological context. Perhaps not every road _should_ be repaired. Geographer Caitlin DeSilvey encourages us to embrace [[thoughts/entropy|entropy]] within the built world, to ask ourselves _for whom_ we engage in preservation, and to consider cultivating an acceptance of “curated decay” where appropriate.
 
 ### Dust: domestic maintenance, housework, care work
 

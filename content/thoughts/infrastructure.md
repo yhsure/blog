@@ -47,7 +47,7 @@ _To oblivion and beyond: Imagining infrastructure after collapse_
 
 An alternate take on [creation vs maintenance](thoughts/creation%20vs%20maintenance.md)
 
-Infrastructures do not function forever. Like everything else, they lose in the universe's constant battle against entropy.
+Infrastructures do not function forever. Like everything else, they lose in the universe's constant battle against [[thoughts/entropy|entropy]].
 
 As Boyer (2016) argues, infrastructures possess a temporal persistence that “points deathward.” Oil refineries along the Texas Gulf Coast, for example, take part in a system of resource extraction that hastens climate change; at the same time, climate change threatens the continued functioning of these refineries, and oil companies have requested federal funds to protect their facilities from the destructive environmental phenomena that they have a hand in creating (Associated Press, 2018).
 

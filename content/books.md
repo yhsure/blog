@@ -46,6 +46,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ### 2024
 
+- **[[thoughts/Time A Very Short Introduction|Time, A Very Short Introduction]]** by Jenann Ismael
 - **Almond** by Sohn Won-pyung
 - **[[thoughts/Saving Time|Saving Time]]** by Jenny Odell
 - **[[thoughts/Bluets|Bluets]]** by Maggie Nelson

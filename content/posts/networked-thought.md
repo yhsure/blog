@@ -15,7 +15,7 @@ Over the past year, I've slowly found processes that have worked well in creatin
 
 A digital garden is not a file cabinet, nor is it fully an index. A digital garden is less so a well-kempt plot for farming and more a mess of entangled growth. It is a network of interconnected ideas and thoughts, clustered by how they are associated with each other.
 
-This is not because I don't like order, but because I think **a dash of chaos and entropy is good for new ideas**. They help connect two separate ideas that you normally would not have associated with each other, and to imagine the 'what if' more frequently.
+This is not because I don't like order, but because I think **a dash of chaos and [[thoughts/entropy|entropy]] is good for new ideas**. They help connect two separate ideas that you normally would not have associated with each other, and to imagine the 'what if' more frequently.
 
 > But there is also a philosophical basis for this which to me is quite practical. A pretty good master analogy is that it’s an attempt to make a big stew pot out of my brain – there is tremendous value in allowing all of these notes and ideas and observations to stew and ferment in there. For me, the real power comes when ideas intermingle and I’m able to discover connections that I truly could never have dreamed of under normal conditions.
 >
