@@ -49,7 +49,7 @@ Thinking that the fact that you trust in them/it will give a reason to fulfill t
 
 Betrayal of trust here is failure to be properly responsive
 
-Hawley's definition of trust is that "to trust somebody is to take them to have made a commitment to do something and to rely on them to fulfill that commitment. Hawley's account grounds the sence of betrayal in the trusted person's failure to live up to their commitments"
+Hawley's definition of trust is that "to trust somebody is to take them to have made a [[thoughts/commitment|commitment]] to do something and to rely on them to fulfill that commitment. Hawley's account grounds the sence of betrayal in the trusted person's failure to live up to their commitments"
 
 ### Non-agent based theories
 

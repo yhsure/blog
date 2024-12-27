@@ -51,9 +51,11 @@ See: [[thoughts/tribe flourishing]], [[thoughts/Dark Forest Theory of the Intern
 
 Assume that people like you. Tempted to ask a gym friend if they want to become a happy-hour friend? Assume they do. Want to reconnect with a friend you’ve fallen out of touch with? Assume they’re in. When we make this assumption, initiative feels less scary. We’re more likely to take some leaps of faith—and eventually navigate the friendship-making process, and life, with more peace, pleasure, and security.
 
+See also: [[thoughts/ask vs guess culture|ask vs guess culture]]
+
 ## Commitment
 
-Commit to some great loves; falling in love with something and building a structure of behaviour for when love falters. Who would they care about if nobody knew?
+Commit to some great loves; falling in love with something and building a structure of behaviour for when love falters. What would they care about if nobody knew?
 
 “For one human being to love another: that is perhaps the most difficult of all our tasks… the work for which all other work is but preparation,” Rilke [wrote](https://themarginalian.us2.list-manage.com/track/click?u=13eb080d8a315477042e0d5b1&id=03701c13af&e=c202dd4d40) to the young poet seeking his advice a century ago.
 
