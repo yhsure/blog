@@ -7,7 +7,7 @@ tags:
   - writing
 ---
 
-_An exploration on commitment, [trust](thoughts/trust.md), and growth._
+_An exploration on [[thoughts/commitment|commitment]], [trust](thoughts/trust.md), and growth._
 
 ![The Persistence of Memory by Salvador Dalí](/thoughts/images/the%20persistence%20of%20memory.png)_The Persistence of Memory by Salvador Dalí_
 

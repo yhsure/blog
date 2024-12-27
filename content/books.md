@@ -21,8 +21,10 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ### Non-fiction
 
-- **Dealers of Lighting** by Michael A. Hiltzik
-- **Creation: Life and How to Make it** by Steve Grand
+- **Weathering** by Ruth Allen
+- **On Giving Up** by Adam Phillips
+- **Cloudspotting for Beginners** by William Grill and Gavin Pretor-Pinney
+- **Life as no one knows it** by Sara Imari Walker
 - **The Utopia of Rules** by David Graeber
 - **Inventing the Medium** by Janet J. Murray
 - **Designing an Internet** by David D. Clark
@@ -30,11 +32,8 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 - **Designs for the Pluriverse** by Arturo Escobar
 - **New Media Art** by Mark Tribe/Reena Jana
 - **are we human? notes on an archaeology of design** by Beatriz Colomina & Mark Wigley
-- **The Unbearable Lightness of Being** by Milan Kundera
-- **Dancing on the Ceiling: Art & Zero Gravity** by Kathleen *Forde*
 - **[Notes on the Synthesis of Form](https://monoskop.org/images/f/ff/Alexander_Christopher_Notes_on_the_Synthesis_of_Form.pdf)** by Christopher Alexander
 - **Practical Reason: On the Theory of Action** by Pierre Bourdieu
-- **The Dream Machine** by M. Mitchell Waldrop
 
 ### Poetry
 
