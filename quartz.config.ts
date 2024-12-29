@@ -62,7 +62,7 @@ const config: QuartzConfig = {
       Plugin.Poetry(),
       Plugin.Latex({ renderEngine: "katex" }),
       Plugin.SyntaxHighlighting(),
-      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false, parseTags: false }),
+      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false, parseTags: false, mermaid: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "absolute", lazyLoad: true }),
