@@ -25,7 +25,7 @@ Some quotes to live by.
 16. "Many a failure of love follows on the—usually false—opinion that we have exhausted the other person’s inside, that there is no further promise of depth." ([Source](https://theconvivialsociety.substack.com/p/what-you-get-is-the-world))
 17. "When the winds of change blow — some people build walls, others build windmills." — Chinese Proverb
 18. "Find out who you are and do it on purpose" – Dolly Parton
-19. "We cannot sow seeds with clenched fists. to sow, we must open our hands" (Adolfo Perez Esquivel)
+19. "We cannot sow seeds with clenched fists. To sow, we must open our hands" (Adolfo Perez Esquivel)
 20. "The ultimate, hidden truth of the world is that it is something that we make, and could just as easily make differently" -- David Graeber
 21. "Life can only be understood backwards but it must be lived forwards" (Soren Kierkegaard)
 22. "The invention of the ship was also the invention of the shipwreck." (Paul Virilio)
@@ -37,4 +37,3 @@ Some quotes to live by.
 28. “If you want to build a ship, don’t drum up people to collect wood and don’t assign them tasks and work, but rather teach them to long for the endless immensity of the sea." (Antoine de Saint Exupéry)
 29. “It is necessary to any originality to have the courage to be an amateur.” (Wallace Stevens)
 30. ![[thoughts/Alexandre Grothendieck#^cfd6c7]]
-31. 

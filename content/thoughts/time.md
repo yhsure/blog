@@ -70,6 +70,12 @@ See also: [[posts/nothing-stops|nothing stops]]
 - We are making a declaration that it is worth it to choose the losing side.
 - But I choose all that anyway; I would rather try and fail to stand still with you than to be fast and sleek without you.
 
+## In [[art]]
+
+David Hockney:
+
+> Hockney valued painting because of the medium's relationship to time. According to him, an image contained the amount of time that went into making it, so that when someone looked at one of his paintings, they began to inhabit the physical, bodily time of its being painted.
+
 ## In stories
 
 From: [Stories that use time to hurt you](https://www.youtube.com/watch?v=e-ZK1AC3C8c)
