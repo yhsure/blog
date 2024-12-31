@@ -70,7 +70,7 @@ See also: [[posts/nothing-stops|nothing stops]]
 - We are making a declaration that it is worth it to choose the losing side.
 - But I choose all that anyway; I would rather try and fail to stand still with you than to be fast and sleek without you.
 
-## In [[art]]
+## In [[thoughts/art|art]]
 
 David Hockney:
 

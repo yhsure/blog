@@ -88,7 +88,7 @@ My (considerably longer) list of unfinished ideas can be found [here](thoughts/i
 	-  <video class="lazy" data-src="/thoughts/images/portal-demo.webm" autoplay loop muted></video>
 - **Quartz** -- a static-site generator for note-taking apps (2021)
 	- A tool and workflow to make maintaining and publishing a digital garden and second brain extremely easy. It involved creating a static site generator from scratch. See the [architecture](https://quartz.jzhao.xyz/advanced/architecture) page for more information.
-	- Now has a strong community with 4800+ stars on GitHub, 2300+ forks, and 140+ unique contributors and has been translated in over 16 languages.
+	- Now has a strong community with 7600+ stars on GitHub, 2600+ forks, and 190+ unique contributors and has been translated in over 23 languages.
 	- Source: [Site](https://quartz.jzhao.xyz/), [GitHub](https://github.com/jackyzha0/quartz)
 	- <video class="lazy" data-src="/thoughts/images/quartz-demo.webm" autoplay loop muted></video>
 - Legist -- a platform to summarize policy for [democracy](thoughts/democracy.md) (2021)
