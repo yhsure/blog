@@ -23,7 +23,6 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 - **Weathering** by Ruth Allen
 - **On Giving Up** by Adam Phillips
-- **Cloudspotting for Beginners** by William Grill and Gavin Pretor-Pinney
 - **Life as no one knows it** by Sara Imari Walker
 - **The Utopia of Rules** by David Graeber
 - **Inventing the Medium** by Janet J. Murray
@@ -40,8 +39,12 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 - **Without** by David Hall
 ## Current
 
-- na
+- **Crime and Punishment** by Fyodor Dostoevsky
 ## Past
+
+### 2025
+
+- **The Beauty of Games** by Frank Lantz
 
 ### 2024
 
