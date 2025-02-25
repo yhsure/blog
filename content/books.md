@@ -45,10 +45,12 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 ### 2025
 
 - **The Beauty of Games** by Frank Lantz
+- **The Miracles of the Namiya General Store** by Keigo Higashino
 
 ### 2024
 
 - **[[thoughts/Time A Very Short Introduction|Time, A Very Short Introduction]]** by Jenann Ismael
+- **The Healing Season of Pottery** by Yeon Somin
 - **Almond** by Sohn Won-pyung
 - **[[thoughts/Saving Time|Saving Time]]** by Jenny Odell
 - **[[thoughts/Bluets|Bluets]]** by Maggie Nelson
