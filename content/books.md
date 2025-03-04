@@ -40,12 +40,15 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 ## Current
 
 - **Crime and Punishment** by Fyodor Dostoevsky
+
 ## Past
 
 ### 2025
 
 - **The Beauty of Games** by Frank Lantz
+- **Someone Who Will Love You in All Your Damaged Glory** by Raphael Bob-Waksberg
 - **The Miracles of the Namiya General Store** by Keigo Higashino
+- **Devotion** by Patti Smith
 
 ### 2024
 
