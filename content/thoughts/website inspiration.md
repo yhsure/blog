@@ -62,6 +62,7 @@ tags:
 - https://daylightcomputer.com/
 - https://departuremono.com/: great information hierarchy and visual identity
 - https://bradleyziffer.com/
+- https://www.makingsoftware.co/
 
 ## Poetic/Conceptual
 
@@ -76,6 +77,7 @@ tags:
 - https://old.mark-beasley.com/peer-peer-sunset/index.html: peer-to-peer sunset experience
 - https://tiffanyq.github.io/sunrise/: animated digital sunset
 - https://tilde.town/~troido/cadastre/town.html: everyone has a little ASCII plot of land
+- https://www.ruth-zhao.com/computer: map world
 
 ## 3D graphics
 
@@ -88,14 +90,6 @@ tags:
 - https://www.stripe.press/poor-charlies-almanack: just fun + great info presentation
 - https://buttermax.net/
 - https://84-24.org/: scroll-y telling
-
-## Portfolios
-
-- https://work.nicochilla.com/
-- https://liuleslie.github.io/
-- https://www.trudy.computer/
-- https://www.theyanktank.com/
-- https://shashwathsantosh.com/
 
 ## Resources
 
