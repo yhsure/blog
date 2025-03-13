@@ -22,7 +22,10 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "DM Serif Display",
+        header: {
+          name: "DM Serif Display",
+          weights: [400],
+        },
         body: "Bricolage Grotesque",
         code: "JetBrains Mono",
       },

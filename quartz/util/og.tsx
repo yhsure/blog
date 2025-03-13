@@ -73,8 +73,8 @@ export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: Fo
 export async function fetchTtf(
   rawFontName: string,
   weight: FontWeight,
-): Promise<Buffer<ArrayBufferLike>> {
-  fontName = fontName.replaceAll(" ", "+")
+): Promise<Buffer<ArrayBufferLike> | undefined> {
+  const fontName = rawFontName.replaceAll(" ", "+")
   const cacheKey = `${fontName}-${weight}`
   const cacheDir = path.join(QUARTZ, ".quartz-cache", "fonts")
   const cachePath = path.join(cacheDir, cacheKey)
@@ -94,7 +94,6 @@ export async function fetchTtf(
   const css = await cssResponse.text()
 
   // Extract .ttf url from css file
-  console.log(css, fontName)
   const urlRegex = /url\((https:\/\/fonts.gstatic.com\/s\/.*?.ttf)\)/g
   const match = urlRegex.exec(css)
 
