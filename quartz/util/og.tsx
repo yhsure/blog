@@ -64,7 +64,8 @@ export async function fetchTtf(
   fontName: string,
   weight: FontWeight,
 ): Promise<Buffer<ArrayBufferLike>> {
-  const cacheKey = `${fontName.replaceAll(" ", "-")}-${weight}`
+  fontName = fontName.replaceAll(" ", "+")
+  const cacheKey = `${fontName}-${weight}`
   const cacheDir = path.join(QUARTZ, ".quartz-cache", "fonts")
   const cachePath = path.join(cacheDir, cacheKey)
 
@@ -83,6 +84,7 @@ export async function fetchTtf(
   const css = await cssResponse.text()
 
   // Extract .ttf url from css file
+  console.log(css, fontName)
   const urlRegex = /url\((https:\/\/fonts.gstatic.com\/s\/.*?.ttf)\)/g
   const match = urlRegex.exec(css)
 
