@@ -71,8 +71,7 @@ export const TagPage: QuartzEmitterPlugin<Partial<TagPageOptions>> = (userOpts) 
 
       return graph
     },
-    async emit(ctx, content, resources): Promise<FilePath[]> {
-      const fps: FilePath[] = []
+    async *emit(ctx, content, resources) {
       const allFiles = content.map((c) => c[1].data)
       const cfg = ctx.cfg.configuration
 
@@ -114,8 +113,8 @@ export const TagPage: QuartzEmitterPlugin<Partial<TagPageOptions>> = (userOpts) 
 
       for (const tag of tags) {
         const slug = joinSegments("tags", tag) as FullSlug
-        const externalResources = pageResources(pathToRoot(slug), resources)
         const [tree, file] = tagDescriptions[tag]
+        const externalResources = pageResources(pathToRoot(slug), file.data, resources)
         const componentData: QuartzComponentProps = {
           ctx,
           fileData: file.data,
@@ -127,16 +126,13 @@ export const TagPage: QuartzEmitterPlugin<Partial<TagPageOptions>> = (userOpts) 
         }
 
         const content = renderPage(cfg, slug, componentData, opts, externalResources)
-        const fp = await write({
+        yield write({
           ctx,
           content,
           slug: file.data.slug!,
           ext: ".html",
         })
-
-        fps.push(fp)
       }
-      return fps
     },
   }
 }

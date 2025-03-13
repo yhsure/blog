@@ -25,10 +25,11 @@ The following sections will go into detail for what methods can be implemented f
 - `BuildCtx` is defined in `quartz/ctx.ts`. It consists of
   - `argv`: The command line arguments passed to the Quartz [[build]] command
   - `cfg`: The full Quartz [[configuration]]
-  - `allSlugs`: a list of all the valid content slugs (see [[paths]] for more information on what a `ServerSlug` is)
+  - `allSlugs`: a list of all the valid content slugs (see [[paths]] for more information on what a slug is)
 - `StaticResources` is defined in `quartz/resources.tsx`. It consists of
   - `css`: a list of CSS style definitions that should be loaded. A CSS style is described with the `CSSResource` type which is also defined in `quartz/resources.tsx`. It accepts either a source URL or the inline content of the stylesheet.
   - `js`: a list of scripts that should be loaded. A script is described with the `JSResource` type which is also defined in `quartz/resources.tsx`. It allows you to define a load time (either before or after the DOM has been loaded), whether it should be a module, and either the source URL or the inline content of the script.
+  - `additionalHead`: a list of JSX elements or functions that return JSX elements to be added to the `<head>` tag of the page. Functions receive the page's data as an argument and can conditionally render elements.
 
 ## Transformers
 
@@ -37,7 +38,7 @@ Transformers **map** over content, taking a Markdown file and outputting modifie
 ```ts
 export type QuartzTransformerPluginInstance = {
   name: string
-  textTransform?: (ctx: BuildCtx, src: string | Buffer) => string | Buffer
+  textTransform?: (ctx: BuildCtx, src: string) => string
   markdownPlugins?: (ctx: BuildCtx) => PluggableList
   htmlPlugins?: (ctx: BuildCtx) => PluggableList
   externalResources?: (ctx: BuildCtx) => Partial<StaticResources>
@@ -99,8 +100,6 @@ export const Latex: QuartzTransformerPlugin<Options> = (opts?: Options) => {
             },
           ],
         }
-      } else {
-        return {}
       }
     },
   }
@@ -236,7 +235,7 @@ export type WriteOptions = (data: {
   // the build context
   ctx: BuildCtx
   // the name of the file to emit (not including the file extension)
-  slug: ServerSlug
+  slug: FullSlug
   // the file extension
   ext: `.${string}` | ""
   // the file content to add
@@ -274,7 +273,7 @@ export const ContentPage: QuartzEmitterPlugin = () => {
       const allFiles = content.map((c) => c[1].data)
       for (const [tree, file] of content) {
         const slug = canonicalizeServer(file.data.slug!)
-        const externalResources = pageResources(slug, resources)
+        const externalResources = pageResources(slug, file.data, resources)
         const componentData: QuartzComponentProps = {
           fileData: file.data,
           externalResources,
