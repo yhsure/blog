@@ -247,7 +247,7 @@ export function transformLink(src: FullSlug, target: string, opts: TransformOpti
 }
 
 // path helpers
-function isFolderPath(fplike: string): boolean {
+export function isFolderPath(fplike: string): boolean {
   return (
     fplike.endsWith("/") ||
     endsWith(fplike, "index") ||
@@ -260,7 +260,7 @@ export function endsWith(s: string, suffix: string): boolean {
   return s === suffix || s.endsWith("/" + suffix)
 }
 
-function trimSuffix(s: string, suffix: string): string {
+export function trimSuffix(s: string, suffix: string): string {
   if (endsWith(s, suffix)) {
     s = s.slice(0, -suffix.length)
   }
