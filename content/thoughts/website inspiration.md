@@ -30,6 +30,7 @@ tags:
 - https://archive.jakedowsmith.com/rosemarybutcher.com/: history bar
 - https://www.yihui.work/: cards
 - https://andrewtrousdale.com/: map
+- https://thehtml.review/04/: depth scroll
 
 ## Aesthetics
 
