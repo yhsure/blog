@@ -44,43 +44,6 @@ body[data-slug="thoughts/craft"] {
   }
 }
 
-.left {
-  display: grid !important;
-  gap: 1.5rem !important;
-  grid-template-columns: 1fr;
-  grid-template-rows: min-content min-content min-content min-content;
-
-  .page-title {
-    grid-area: 1 / 1 / 2 / 3;
-  }
-
-  .search {
-    grid-area: 2 / 1 / 3 / 2;
-  }
-
-  .darkmode {
-    grid-area: 2 / 2 / 3 / 3;
-    align-self: center;
-  }
-
-  .toc {
-    grid-row: 3;
-    grid-column: 1 / 3;
-  }
-
-  .recent-notes:nth-last-child(2) {
-    grid-area: 3 / 1 / 3 / 3;
-  }
-
-  .recent-notes:nth-last-child(1) {
-    grid-area: 4 / 1 / 4 / 3;
-  }
-
-  @media all and ($mobile) {
-    display: flex !important;
-  }
-}
-
 hr {
   overflow: visible;
   padding: 0;
