@@ -4,8 +4,7 @@ date: 2019-08-30T08:51:56-07:00
 tags:
   - fruit
   - personal
-aliases:
-  - ../posts/hootsuite
+aliases: []
 ---
 
 (with insights from Calvin and Hobbes)

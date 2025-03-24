@@ -4,8 +4,7 @@ date: 2021-08-07T08:38:11-04:00
 tags:
   - fruit
   - technical
-aliases:
-  - ../posts/react
+aliases: []
 ---
 
 React is, as the [website](https://reactjs.org/) says, "a JavaScript library for building user interfaces." What this means exactly, is often confusing to people.

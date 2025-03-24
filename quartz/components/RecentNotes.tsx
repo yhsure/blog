@@ -33,11 +33,6 @@ export default ((userOpts?: Partial<Options>) => {
     cfg,
   }: QuartzComponentProps) => {
     const opts = { ...defaultOptions(cfg), ...userOpts }
-
-    if (fileData.slug !== "index") {
-      return <></>
-    }
-
     const pages = allFiles.filter(opts.filter).sort(opts.sort)
     const remaining = Math.max(0, pages.length - opts.limit)
     return (

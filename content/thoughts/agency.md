@@ -1,5 +1,5 @@
 ---
-title: "Agency"
+title: Agency
 date: 2023-04-01
 tags:
   - sapling

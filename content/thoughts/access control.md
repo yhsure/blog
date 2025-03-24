@@ -4,7 +4,7 @@ date: 2022-08-16
 tags:
   - seed
 aliases:
-  - capabilities system
+  - thoughts/capabilities system
 ---
 
 > Access control systems guarantee that every action performed adheres to a set of rules, which can be dynamically changed at runtime.

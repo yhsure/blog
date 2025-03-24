@@ -15,6 +15,37 @@ export const sharedPageComponents: SharedLayout = {
   }),
 }
 
+const left = [
+  Component.PageTitle(),
+  Component.MobileOnly(Component.Spacer()),
+  Component.Flex({
+    components: [
+      {
+        Component: Component.Search(),
+        grow: true,
+      },
+      { Component: Component.Darkmode() },
+    ],
+  }),
+  Component.DesktopOnly(
+    Component.RecentNotes({
+      title: "Recent Writing",
+      limit: 4,
+      filter: (f) =>
+        f.slug!.startsWith("posts/") && f.slug! !== "posts/index" && !f.frontmatter?.noindex,
+      linkToMore: "posts/" as SimpleSlug,
+    }),
+  ),
+  Component.DesktopOnly(
+    Component.RecentNotes({
+      title: "Recent Notes",
+      limit: 2,
+      filter: (f) => f.slug!.startsWith("thoughts/"),
+      linkToMore: "thoughts/" as SimpleSlug,
+    }),
+  ),
+]
+
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
@@ -26,30 +57,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ContentMeta(),
     Component.TagList(),
   ],
-  left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Search(),
-    Component.Darkmode(),
-    Component.DesktopOnly(
-      Component.RecentNotes({
-        title: "Recent Writing",
-        limit: 4,
-        filter: (f) =>
-          f.slug!.startsWith("posts/") && f.slug! !== "posts/index" && !f.frontmatter?.noindex,
-        linkToMore: "posts/" as SimpleSlug,
-      }),
-    ),
-    Component.DesktopOnly(
-      Component.RecentNotes({
-        title: "Recent Notes",
-        limit: 2,
-        filter: (f) => f.slug!.startsWith("thoughts/"),
-        linkToMore: "thoughts/" as SimpleSlug,
-      }),
-    ),
-    Component.DesktopOnly(Component.TableOfContents()),
-  ],
+  left,
   right: [
     Component.Graph({
       localGraph: {
@@ -59,6 +67,7 @@ export const defaultContentPageLayout: PageLayout = {
         showTags: false,
       },
     }),
+    Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
 }
@@ -66,11 +75,6 @@ export const defaultContentPageLayout: PageLayout = {
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
-  left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Search(),
-    Component.Darkmode(),
-  ],
+  left,
   right: [],
 }

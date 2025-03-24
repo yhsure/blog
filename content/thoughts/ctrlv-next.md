@@ -4,8 +4,7 @@ date: 2021-04-11T16:55:12-07:00
 tags:
   - fruit
   - technical
-aliases:
-  - ../posts/ctrlv-next
+aliases: []
 ---
 
 ![Rewriting ctrl-v using Next.js](thoughts/images/ctrlv-next/title.png)
