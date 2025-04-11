@@ -17,7 +17,6 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 - **Homo Ludens** by Johan Huizinga
 - **The Ministry for the Future** by Kim Stanley Robinson
 - **Cat's Cradle** by Kurt Vonnegut
-- **A Psalm for the Wild-Built** by Becky Chambers
 
 ### Non-fiction
 
@@ -40,11 +39,13 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 ## Current
 
 - **Crime and Punishment** by Fyodor Dostoevsky
+- **A Psalm for the Wild-Built** by Becky Chambers
 
 ## Past
 
 ### 2025
 
+- **The Lathe of Heaven** by Ursula K. Le Guin
 - **[[thoughts/How to Build a Universe That Doesn't Fall Apart Two Days Later|How to Build a Universe That Doesn't Fall Apart Two Days Later]]** by Philip K. Dick
 - **[[thoughts/Stay True|Stay True]]** by Hua Hsu
 - **The Beauty of Games** by Frank Lantz
