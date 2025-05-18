@@ -1,3 +1,9 @@
+---
+title: Dead Poets Society
+draft: true
+---
+
+
 - Tradition, Discipline, Honor, and Excellence
 - He seeks to inspire the boys to love poetry not because of some misguided sense of “objective” greatness, but because poetry elicits passion for life.
 	- First, they should act on their impulses, “_Carpe Diem,_” by seizing the day. 
