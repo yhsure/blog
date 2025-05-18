@@ -73,3 +73,18 @@ draft: true
 - is it hard / painful?
 	- yes and frustrating
 	- but the process is fun
+
+- how much company do i like?
+	- actually most of my hobbies are pretty solitary and i like being locked in for a lot of them
+
+---
+
+- hypothetical super high paying job
+	- design engineering lead (is this what i want?)
+		- what does the job look like?
+		- what about this makes it more appealing over my current role?
+	- how does the comp materially change things?
+- what could be better about my current role?
+	- what more am i hoping to get out of my current role?
+	- how am i looking to grow?
+
