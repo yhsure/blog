@@ -433,7 +433,7 @@ I think research logs tend to generally focus too much on what one did rather th
   - Inspiration from Delta-CRDTs
     - In the causal-consistency-ensuring anti-entropy algorithm. When a node sends a delta-interval to another, the receiving node replies with an acknowledgment after merging the interval into its local state. A delta that has been acknowledged by all of a node’s neighbours is then garbage-collected
   - Synchronized GC
-    - Under two-phase commit, each replica will vote on whether each tombstone is still necessary.
+    - Under [[thoughts/Two-phase commit|two-phase commit]], each replica will vote on whether each tombstone is still necessary.
   - QCs for GC?
 - Type-level consistency guarantees?
   - [Source](http://web.archive.org/web/20200225212322/http://composition.al/CMPS290S-2018-09/2018/11/21/mixing-consistency-in-a-programmable-storage-system.html)
