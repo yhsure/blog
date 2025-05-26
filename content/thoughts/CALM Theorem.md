@@ -7,7 +7,7 @@ tags:
 
 > Consistency As Logical Monotonicity
 
-Logically monotonic distributed code is [[thoughts/consistency|eventually consistent]] without any need for [[thoughts/consensus|consensus]] protocols (distributed locks, two-phase commit, etc.)
+Logically monotonic distributed code is [[thoughts/consistency|eventually consistent]] without any need for [[thoughts/consensus|consensus]] protocols (distributed locks, [[thoughts/Two-phase commit|two-phase commit]], etc.)
 
 See also: [[thoughts/CRON Theorem|CRON Theorem]], [[thoughts/I-Confluence]]
 

@@ -35,7 +35,7 @@ Big problem with distributed transactions: atomic commitment problem
 - Either all nodes must commit or all must abort
 - If any node crashes, all must abort
 
-Usually done through two-phase commit (2PC)
+Usually done through [[thoughts/Two-phase commit|two-phase commit]] (2PC)
 
 - Client begins a transaction with database nodes A and B
 - When done, the client _commits_ the transaction with the coordinator
