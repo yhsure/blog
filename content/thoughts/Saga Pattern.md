@@ -16,5 +16,5 @@ A **saga** is a sequence of local transactions.
 
 ## Drawbacks
 
-- Lack of automatic rollback - a developer must design compensating transactions that explicitly undo changes made earlier in a saga rather than relying on the automatic rollback feature of ACID transactions
-- Lack of isolation (the "I" in [[thoughts/CAP Theorem|ACID]]) - the lack of isolation means that there’s risk that the concurrent execution of multiple sagas and transactions can use data anomalies.
+- Lack of automatic rollback: a developer must design compensating transactions that explicitly undo changes made earlier in a saga rather than relying on the automatic rollback feature of ACID transactions
+- Lack of [[thoughts/isolation|isolation]]: means that there’s risk that the concurrent execution of multiple sagas and transactions can use data anomalies.
