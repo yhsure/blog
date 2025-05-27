@@ -18,7 +18,7 @@ One way to illustrate this is to imagine a set of clusters trying to agree on a 
 
 ACID vs BASE
 
-- ACID stands for atomicity, consistency, isolation, durability
+- ACID stands for atomicity, consistency, [[thoughts/isolation|isolation]], durability
   - Prioritizes C and A
   - Immediate consistency limits scale-out performance
 - BASE stands for basically available, soft state, eventual consistency

@@ -13,4 +13,4 @@ Common mechanisms include:
 - **Optimistic concurrency control** - assuming conflicts are rare and checking for them at commit time. If there is a conflict, re-attempt the transaction.
 	- OCC is generally used in environments with low contention. For high contention cases, the cost of re-attempting the transaction hurts performance significantly.
 - **Multi-version concurrency control (MVCC)** - maintaining multiple versions of data so readers don't block writers
-	- The most common isolation level implemented with MVCC is snapshot isolation. With snapshot isolation, a transaction observes a state of the data as of when the transaction started.
+	- The most common [[thoughts/isolation|isolation]] level implemented with MVCC is snapshot isolation. With snapshot isolation, a transaction observes a state of the data as of when the transaction started.
