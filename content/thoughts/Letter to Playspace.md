@@ -1,5 +1,8 @@
 ---
 title: Letter to Playspace
+date: 2025-05-18
+tags:
+  - seed
 ---
 
 Dear [[thoughts/Playspace|Playspace]] Community,
