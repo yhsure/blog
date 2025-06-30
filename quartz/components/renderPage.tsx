@@ -239,18 +239,20 @@ export function renderPage(
         <div id="quartz-root" class="page">
           <Body {...componentData}>
             {LeftComponent}
+
+            <div class="page-header">
+              <Header {...componentData}>
+                {header.map((HeaderComponent) => (
+                  <HeaderComponent {...componentData} />
+                ))}
+              </Header>
+            </div>
+
+            {RightComponent}
+
             <div class="center">
-              <div class="page-header">
-                <Header {...componentData}>
-                  {header.map((HeaderComponent) => (
-                    <HeaderComponent {...componentData} />
-                  ))}
-                </Header>
-                <div class="popover-hint">
-                  {slug !== "index" &&
-                    beforeBody.map((BodyComponent) => <BodyComponent {...componentData} />)}
-                </div>
-              </div>
+              {slug !== "index" &&
+                beforeBody.map((BodyComponent) => <BodyComponent {...componentData} />)}
               <Content {...componentData} />
               <hr />
               <div class="page-footer">
@@ -259,7 +261,6 @@ export function renderPage(
                 ))}
               </div>
             </div>
-            {RightComponent}
             <Footer {...componentData} />
           </Body>
         </div>

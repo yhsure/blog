@@ -241,8 +241,7 @@ a {
         display: flex;
         height: unset;
         flex-direction: row;
-        padding: 0;
-        padding-top: 2rem;
+        padding: 0 1rem;
       }
     }
 
@@ -259,7 +258,7 @@ a {
         height: unset;
         width: 100%;
         flex-direction: row;
-        padding: 0;
+        padding: 0 1rem;
         & > * {
           flex: 1;
           max-height: 24rem;
@@ -275,7 +274,7 @@ a {
 
     & .page-header {
       grid-area: grid-header;
-      margin: $topSpacing 0 0 0;
+      margin-top: 0;
       @media all and ($mobile) {
         margin-top: 0;
         padding: 0;
@@ -283,6 +282,10 @@ a {
     }
 
     & .center > article {
+      grid-area: grid-center;
+    }
+
+    & .center {
       grid-area: grid-center;
     }
 
@@ -300,8 +303,8 @@ a {
         margin-right: 0;
       }
       @media all and ($mobile) {
-        margin-right: 0;
-        margin-left: 0;
+        margin-right: 1rem;
+        margin-left: 1rem;
       }
     }
     & footer {
