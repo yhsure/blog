@@ -1,0 +1,23 @@
+@use "../../styles/variables.scss" as *;
+
+.banner-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  flex: 1 0 100%;
+
+  @media all and ($mobile) {
+    /* remove page padding */
+    margin-left: -1rem;
+    width: calc(100% + 2rem);
+  }
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0; /* ensure no rounding */
+} 
