@@ -2,10 +2,12 @@
 
 .banner-wrapper {
   width: 100%;
-  height: 200px;
+  aspect-ratio: 4.15 / 1; /* banner scales at ~4.15:1 */
   overflow: hidden;
   position: relative;
   flex: 1 0 100%;
+  margin-left: -5px;
+  width: calc(100% + 5px);
 
   @media all and ($mobile) {
     /* remove page padding */

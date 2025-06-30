@@ -8,7 +8,7 @@
  * assuming mobile < desktop
  */
 $breakpoints: (
-  mobile: 800px,
+  mobile: 1000px,
   desktop: 1200px,
 );
 
@@ -18,7 +18,7 @@ $desktop: "(min-width: #{map.get($breakpoints, desktop)})";
 
 $pageWidth: #{map.get($breakpoints, mobile)};
 $sidePanelWidth: 320px; //380px;
-$topSpacing: 0rem;
+$topSpacing: 3rem;
 $boldWeight: 700;
 $semiBoldWeight: 600;
 $normalWeight: 400;
@@ -29,8 +29,8 @@ $mobileGrid: (
   rowGap: "5px",
   columnGap: "5px",
   templateAreas:
-    '"grid-header"\
-      "grid-sidebar-left"\
+    '"grid-sidebar-left"\
+      "grid-header"\
       "grid-center"\
       "grid-sidebar-right"\
       "grid-footer"',
