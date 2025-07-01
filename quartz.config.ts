@@ -8,14 +8,14 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "jzhao.xyz",
+    pageTitle: "Bjerregaard's Blog",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "jzhao.xyz",
+    baseUrl: "yhsure.github.io/blog/",
     ignorePatterns: ["private", "templates"],
     defaultDateType: "created",
     theme: {
@@ -23,10 +23,10 @@ const config: QuartzConfig = {
       cdnCaching: true,
       typography: {
         header: {
-          name: "DM Serif Display",
+          name: "Lato",
           weights: [400],
         },
-        body: "Bricolage Grotesque",
+        body: "Lato",
         code: "JetBrains Mono",
       },
       colors: {
