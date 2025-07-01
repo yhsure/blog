@@ -1,24 +1,55 @@
 .recent-notes {
-  & > h3 {
-    margin: 0.5rem 0 0 0;
-    font-size: 1rem;
+  /* Style year titles (both direct and nested) */
+  & > h3,
+  & > div > h3 {
+    margin: 0.25rem 0 0 0; /* minimal top margin */
+    font-size: 0.9rem;   /* equal to post titles */
   }
 
-  & > ul.recent-ul {
+  /* Apply to any recent-ul list, even when nested */
+  ul.recent-ul {
     list-style: none;
-    margin-top: 1rem;
-    padding-left: 0;
+    /* Further reduce space between year heading and first post */
+    margin: 0.05rem 0 0;
+    padding: 0;
 
-    & > li {
-      margin: 1rem 0;
-      .section > .desc > h3 > a {
-        background-color: transparent;
+    li {
+      /* Even tighter spacing between individual posts */
+      margin: 0rem 0;
+      padding: 0;
+
+      /* Reset layout so titles align flush left */
+      & > .section {
+        display: block !important;
       }
 
-      .section > .meta {
-        margin: 0 0 0.5rem 0;
+      /* Remove highlight/background on links & set smaller font size */
+      .section .desc h3 a {
+        background-color: transparent !important;
+        padding: 0 !important;
+        font-size: 0.9rem; /* match year heading */
+      }
+
+      .section .meta {
+        margin: 0rem 0 0;
         opacity: 0.6;
+        font-size: 0.9rem;
       }
+    }
+  }
+
+  /* Larger gap before each subsequent year grouping */
+  > div:not(:first-child) {
+    margin-top: 0.5rem;
+  }
+
+  /* Style the "See X more" link consistency */
+  & > p {
+    margin: 0.25rem 0 0;
+    font-size: 0.85rem;
+
+    a {
+      font-size: inherit;
     }
   }
 }
