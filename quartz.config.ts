@@ -15,7 +15,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "yhsure.github.io/blog/",
+    baseUrl: "yhsure.github.io/blog",
     ignorePatterns: ["private", "templates"],
     defaultDateType: "created",
     theme: {
