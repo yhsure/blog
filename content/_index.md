@@ -1,9 +1,9 @@
 ---
-title: "jzhao.xyz"
+title: "BjerregaardBlog"
 tags:
   - evergreen
+banner: "./banner.svg"
 ---
-<img src="./banner.svg" width="701" height="175">
 
 ```poetry
 Welcome!
@@ -22,5 +22,5 @@ As far as 'about' pages go, I hope this acts as an open invitation into the many
 - [The bookshelf on the far wall](/books): books that are in some state of read, being read, or to be read.
 
 ```poetry
-- jacky :)
+Andreas Bjerregaard :)
 ```
