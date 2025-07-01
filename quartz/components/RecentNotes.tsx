@@ -8,6 +8,9 @@ import { GlobalConfiguration } from "../cfg"
 import { i18n } from "../i18n"
 import { classNames } from "../util/lang"
 
+// @ts-ignore
+import recentNotesScript from "./scripts/recentNotes.inline"
+
 interface Options {
   title?: string
   limit: number
@@ -97,5 +100,6 @@ export default ((userOpts?: Partial<Options>) => {
   }
 
   RecentNotes.css = style
+  RecentNotes.afterDOMLoaded = recentNotesScript
   return RecentNotes
 }) satisfies QuartzComponentConstructor

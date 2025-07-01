@@ -663,3 +663,11 @@ iframe.pdf {
   transition: width 0.2s ease;
   z-index: 9999;
 }
+
+/* Override link colors in sidebars to neutral dark */
+.sidebar a {
+  color: var(--dark);
+}
+.sidebar a:hover {
+  color: var(--dark);
+}
