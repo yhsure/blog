@@ -2,15 +2,16 @@
 
 .banner-wrapper {
   width: 100%;
-  aspect-ratio: 4.15 / 1; /* banner scales at ~4.15:1 */
+  aspect-ratio: 4.15 / 1;
   overflow: hidden;
   position: relative;
   flex: 1 0 100%;
   margin-left: -5px;
   width: calc(100% + 5px);
+  background-blend-mode: screen;
+  background-size: cover;
 
   @media all and ($mobile) {
-    /* remove page padding */
     margin-left: -1rem;
     width: calc(100% + 2rem);
   }
@@ -21,5 +22,5 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 0; /* ensure no rounding */
-} 
+  border-radius: 0;
+}
