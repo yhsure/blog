@@ -109,10 +109,23 @@ button.desktop-explorer {
 }
 
 .explorer-content {
+  position: relative; /* to anchor pseudo element */
   list-style: none;
   overflow: hidden;
   overflow-y: auto;
   margin-top: 0.5rem;
+
+  /* Vertical bar handled by pseudo-element */
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -6px; /* push bar further left */
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: var(--lightgray);
+  }
 
   & ul {
     list-style: none;
@@ -121,13 +134,29 @@ button.desktop-explorer {
     overscroll-behavior: contain;
 
     & li > a {
-      color: var(--dark);
-      opacity: 0.75;
+      /* Default link appearance */
+      display: block;
+      width: 100%;
+      margin: 0 0 0 -0.75rem; /* pull box left */
+      padding: 0.2rem 0.4rem 0.2rem 0.75rem; /* add internal left padding equal to offset so text aligns */
+      color: var(--darkgray); /* override blue link color */
+      border-left: 2px solid transparent;
+      border-radius: 0.25rem;
+      opacity: 0.9;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
       pointer-events: all;
 
+      /* Hover state — highlight background */
+      &:hover {
+        background-color: var(--lightgray);
+      }
+
+      /* Active (current page) state */
       &.active {
+        background-color: color-mix(in srgb, var(--tertiary) 20%, transparent);
+        border-left-color: var(--tertiary);
+        color: var(--dark);
         opacity: 1;
-        color: var(--tertiary);
       }
     }
   }

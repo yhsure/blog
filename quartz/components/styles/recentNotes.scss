@@ -1,9 +1,24 @@
 .recent-notes {
+  position: relative;
+
+  /* Full-height grey vertical guide */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -0.5rem; /* matches list item offset */
+    width: 2px;
+    background-color: var(--lightgray);
+  }
+
   /* Style year titles (both direct and nested) */
   & > h3,
   & > div > h3 {
-    margin: 0.25rem 0 0 0; /* minimal top margin */
+    margin: 0.25rem 0 0 -0.5rem; /* align with vertical bar */
+    padding-left: 0.5rem; /* maintain text flush */
     font-size: 0.9rem;   /* equal to post titles */
+    border-left: 2px solid transparent; /* default transparent, active handled by list */
   }
 
   /* Apply to any recent-ul list, even when nested */
@@ -18,12 +33,33 @@
       margin: 0rem 0;
       padding: 0;
 
+      /* Visual styling for list items */
+      margin-left: -0.5rem; /* extend box further left */
+      padding-left: 0.5rem; /* keep text flush with year heading */
+      position: relative;
+      z-index: 0; /* default */
+      border-left: 2px solid transparent; /* show base vertical line, highlight on active */
+      border-radius: 0 8px 8px 0;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
+
+      /* Hover state */
+      &:hover {
+        background-color: color-mix(in srgb, var(--lightgray) 20%, transparent);
+      }
+
+      /* Active/current page state */
+      &.active {
+        border-left-color: var(--tertiary);
+        background-color: color-mix(in srgb, var(--tertiary) 6%, transparent); /* subtle tint */
+        z-index: 1; /* appear above pseudo line */
+      }
+
       /* Reset layout so titles align flush left */
       & > .section {
         display: block !important;
       }
 
-      /* Remove highlight/background on links & set smaller font size */
+      /* Remove highlight/background on links */
       .section .desc h3 a {
         background-color: transparent !important;
         padding: 0 !important;
