@@ -2,7 +2,7 @@
 title: "BjerregaardBlog"
 tags:
   - evergreen
-banner: "./posts/images/AdobeStock_588829468.svg"
+banner: "./posts/images/fishes.svg"
 ---
 
 ```poetry
