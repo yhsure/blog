@@ -357,3 +357,81 @@ body.animation-ready #quartz-body {
     transform: rotateX(0deg) rotateY(0deg) scale(1);
   }
 }
+
+/* -------------------------------------------------------------------------
+ * Layout fixes
+ * ------------------------------------------------------------------------- */
+// Do not let the sidebars on the landing page force the grid to be the full
+// viewport height – this was causing the body to be taller than its content
+// which resulted in an empty area you could scroll into. Instead let the
+// grid rows size naturally based on their own content.
+body[data-slug="index"] {
+  #quartz-body {
+    .sidebar {
+      height: auto !important;
+    }
+  }
+
+  // Prevent any accidental over-scroll on the landing page itself.
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* -------------------------------------------------------------------------
+ * Pretty scrollbars (Chromium / Firefox)
+ * ------------------------------------------------------------------------- */
+// These rules will apply across the whole site – feel free to tweak the
+// colours in variables.scss if you want something different.
+html {
+  // Firefox
+  scrollbar-color: var(--gray) transparent;
+  scrollbar-width: thin;
+}
+
+// WebKit browsers (Chrome / Edge / Safari)
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+/* -------------------------------------------------------------------------
+ * Subtle page progress bar
+ * ------------------------------------------------------------------------- */
+.navigation-progress {
+  height: 3px;
+  background: var(--secondary);
+  opacity: 0.7;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Scroll progress bar ------------------------------------------------------ */
+.scroll-progress {
+  position: fixed;
+  inset: 0 auto auto 0;
+  height: 3px;
+  width: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.8;
+  &__bar {
+    height: 100%;
+    width: 100%;
+    background: var(--secondary);
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: transform 0.1s linear;
+  }
+}

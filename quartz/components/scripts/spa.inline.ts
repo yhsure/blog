@@ -212,3 +212,44 @@ if (!customElements.get("route-announcer")) {
     },
   )
 }
+
+/** -------------------------------------------------------------------------
+ * Vertical-scroll progress indicator at top of page
+ * ------------------------------------------------------------------------*/
+(function createScrollProgressBar() {
+  // Track container
+  let track = document.querySelector<HTMLDivElement>(".scroll-progress");
+  if (!track) {
+    track = document.createElement("div");
+    track.className = "scroll-progress"; // track element (always visible)
+    track.dataset.persist = ""; // survive SPA diff
+
+    // Filled portion
+    const bar = document.createElement("div");
+    bar.className = "scroll-progress__bar";
+    track.appendChild(bar);
+
+    document.body.appendChild(track);
+  }
+
+  const bar = track.firstElementChild as HTMLElement;
+
+  const update = () => {
+    const doc = document.documentElement;
+    const max = doc.scrollHeight - doc.clientHeight;
+    const ratio = max > 0 ? doc.scrollTop / max : 0;
+    bar.style.transform = `scaleX(${ratio})`;
+  };
+
+  update();
+  window.addEventListener("scroll", update, { passive: true });
+  document.addEventListener("nav", () => {
+    const loadBar = document.querySelector<HTMLDivElement>(".navigation-progress");
+    loadBar?.remove();
+    // If track element was detached by micromorph, re-attach it
+    if (!track.isConnected) {
+      document.body.appendChild(track);
+    }
+    requestAnimationFrame(update);
+  });
+})();
