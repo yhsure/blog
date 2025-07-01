@@ -4,11 +4,16 @@
 @use "./syntax.scss";
 @use "./callouts.scss";
 
+// Ensure all elements use border-box sizing
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
   text-size-adjust: none;
   overflow-x: hidden;
-  width: 100vw;
+  width: 100%;
 }
 
 body {
@@ -17,6 +22,12 @@ body {
   background-color: var(--light);
   font-family: var(--bodyFont);
   color: var(--darkgray);
+  width: 100%;
+  max-width: 100%;
+  
+  @media all and ($mobile) {
+    overflow-x: hidden; // Ensure no horizontal overflow on mobile
+  }
 }
 
 .text-highlight {
@@ -55,7 +66,13 @@ ul,
 .katex,
 .math {
   overflow-wrap: anywhere;
+  word-break: break-word; // Additional word breaking for mobile
   /* tr and td removed from list of selectors for overflow-wrap, allowing them to use default 'normal' property value */
+  
+  @media all and ($mobile) {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
 }
 
 .math {
@@ -218,6 +235,7 @@ a {
     }
     @media all and ($mobile) {
       margin: 0 auto;
+      padding: 0 0.5rem;
     }
 
     & .sidebar {
@@ -234,6 +252,7 @@ a {
       z-index: 1;
       grid-area: grid-sidebar-left;
       flex-direction: column;
+      padding-top: 2.1rem; // Align with ArticleTitle and right sidebar
       @media all and ($mobile) {
         gap: 0;
         align-items: center;
@@ -241,7 +260,7 @@ a {
         display: flex;
         height: unset;
         flex-direction: row;
-        padding: 0 1rem;
+        padding: 0 0.5rem; // Reduce left sidebar padding on mobile
       }
     }
 
@@ -249,6 +268,7 @@ a {
       grid-area: grid-sidebar-right;
       margin-right: 0;
       flex-direction: column;
+      padding-top: 2.1rem; // Align with ArticleTitle top margin (2rem instead of 3rem)
       @media all and ($mobile) {
         margin-left: inherit;
         margin-right: inherit;
@@ -258,7 +278,7 @@ a {
         height: unset;
         width: 100%;
         flex-direction: row;
-        padding: 0 1rem;
+        padding: 0 0.5rem; // Reduce right sidebar padding on mobile
         & > * {
           flex: 1;
           max-height: 24rem;
@@ -303,8 +323,8 @@ a {
         margin-right: 0;
       }
       @media all and ($mobile) {
-        margin-right: 1rem;
-        margin-left: 1rem;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem; // Reduce center content margins on mobile
       }
     }
     & footer {
