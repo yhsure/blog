@@ -6,7 +6,7 @@ const SidebarFooter: QuartzComponent = ({ displayClass }: QuartzComponentProps) 
   return (
     <div class={classNames(displayClass, "sidebar-footer")}>
       <p class="powered">
-        <img src="/static/quartz_icon.svg" alt="Quartz logo" style="width: 28px; height: 28px; margin-right: 0;"/>
+        <img src="static/quartz_icon.svg" alt="Quartz logo" style="width: 28px; height: 28px; margin-right: 0;"/>
         Powered by Quartz 4
       </p>
       {/* <ul class="social-links">
