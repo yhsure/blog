@@ -1,0 +1,80 @@
+@use "../../styles/variables.scss" as *;
+
+.sidebar-footer {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  right: auto;
+  width: calc(100% / 3 - 2rem); /* Assuming 3-column layout */
+  max-width: 300px;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 100;
+
+  /* Remove box styles */
+  border-top: none;
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+
+  @media all and (max-width: 1200px) {
+    width: calc(250px - 2rem);
+  }
+
+  @media all and ($mobile) {
+    /* Hide desktop-only instance when present inside mobile sidebar */
+    &.desktop-only {
+      display: none !important;
+    }
+    /* Follow behaviour of .explorer on mobile */
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    width: 100%;
+    max-width: none;
+    /* Place after other sidebar items when the sidebar switches to a horizontal layout */
+    order: 999;
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  & img {
+    width: 14px;
+    height: 14px;
+    margin-right: 0.25rem;
+  }
+
+  & .powered {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin: 0;
+  }
+
+  & .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 0.5rem;
+
+    & a {
+      color: inherit;
+      text-decoration: none;
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+} 

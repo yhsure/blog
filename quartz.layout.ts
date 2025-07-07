@@ -22,13 +22,11 @@ const recentNotes = [
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [Component.Banner({})],
-  afterBody: [...recentNotes.map((c) => Component.MobileOnly(c))],
-  footer: Component.Footer({
-    links: {
-      GitHub: "https://github.com/jackyzha0",
-      Twitter: "https://twitter.com/_jzhao",
-    },
-  }),
+  afterBody: [
+    ...recentNotes.map((c) => Component.MobileOnly(c)),
+    Component.MobileOnly(Component.SidebarFooter()),
+  ],
+  footer: Component.Footer(),
 }
 
 const left = [
@@ -44,6 +42,7 @@ const left = [
     ],
   }),
   ...recentNotes.map((c) => Component.DesktopOnly(c)),
+  Component.DesktopOnly(Component.SidebarFooter()),
 ]
 
 // components for pages that display a single page (e.g. a single note)
