@@ -1,25 +1,28 @@
 ---
-title: "BjerregaardBlog"
+title: "Bjerregaard's Blog"
 tags:
   - evergreen
-banner: "./posts/images/fishes.svg"
+banner: "./posts/images/landscape2.svg"
 ---
 
 ```poetry
 Welcome!
 ```
 
-I'm Andreas. This is my little [[thoughts/hypertext|hypertext]] [[posts/networked-thought|garden]] on the [[thoughts/Internet|Internet]] -- make yourself at home!
+I'm Andreas. This is my little hypertext garden on the Internet -- make yourself at home!
 
-Currently, I'm exploring what [[thoughts/agency|agentic]] and [[posts/agentic-computing|communal]] technology looks like at [Replit](https://replit.com/) and through my [independent research practice](/tags/rhizome). How might we create infrastructures and technologies that empower the residents of the web to have access to the same tools as the architects?
+Currently, I'm figuring out how best to incorporate biological and geometrical priors for representation learning; that's the working title of my PhD! To what degree can we utilize expert knowledge for guiding the learning process? Does it help? These types of questions are at the heart of my research! 
 
-On a broader level, I care deeply about creating _[spaces](https://lu.ma/playspace)_ that enable others to have more [[thoughts/agency]]: agency to ask questions without judgement; agency to do what they are intrinsically drawn toward; agency to [[thoughts/play|play]] (because what's the point if we can't have a bit of fun?).
 
-As far as 'about' pages go, I hope this acts as an open invitation into the many winding paths throughout this garden. Here are some places you may want to visit:
+I've been put in the deep water of *biological* machine learning by my PhD supervisor [Anders Krogh](https://scholar.google.com/citations?user=-vGMjmwAAAAJ) who I am grateful to be working with. After he and [Viktoria Schüster](https://viktoriaschuster.github.io/website/) created the *Deep Generative Decoder*, a simplified VAE-like model with no encoder, I've explored various ways of getting the most from decoders. Luckily, *geometrical machine learning* has already analyzed such mappings between spaces to a great extent.
 
-- [The oak letter desk](/posts/): a collection of my favourite [[thoughts/writing|writing]];
-- [The hand-crafted workbench](thoughts/craft.md): craft I am proud of (websites, talks, workshops, projects, etc.);
-- [The bookshelf on the far wall](/books): books that are in some state of read, being read, or to be read.
+On a broader level, I care a lot about *learning and playing*. When I'm not in the office working on my PhD, you'll probably find me struggling with Chopin, competing in games, learning languages, or just exploring the world -- most often through film and animation ;)
+
+As far as 'about' pages go, I hope this acts as an open invitation into this new garden. You may be interested in:
+
+- [*The blog desk*](/posts/): a layman-oriented version of my academic work, and the raison d'être of this garden;
+<!-- - [*The bookshelf on the far wall*](/books): books that are in some state of read, being read, or to be read; -->
+- [*The visual curriculum vitae*](https://yhsure.github.io/): my educational and professional path in a super concise format.
 
 ```poetry
 Andreas Bjerregaard :)
