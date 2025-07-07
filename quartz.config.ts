@@ -64,6 +64,7 @@ const config: QuartzConfig = {
       Plugin.Poetry(),
       Plugin.Latex({ renderEngine: "katex" }),
       Plugin.SyntaxHighlighting(),
+      Plugin.FlattenPosts(),
       Plugin.ObsidianFlavoredMarkdown({
         enableInHtmlEmbed: false,
         parseTags: false,
@@ -89,6 +90,7 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
+      Plugin.AliasRedirects(),
       // // Comment out CustomOgImages to speed up build time
       Plugin.CustomOgImages(),
     ],

@@ -6,8 +6,11 @@ const recentNotes = [
   Component.RecentNotes({
     title: "Recent Writing",
     limit: 5,
-    filter: (f) =>
-      f.slug!.startsWith("posts/") && f.slug! !== "posts/index" && !f.frontmatter?.noindex,
+    filter: (f) => {
+      const relPath = (f as any).relativePath as string | undefined
+      const isPost = relPath ? relPath.startsWith("posts/") : false
+      return isPost && relPath !== "posts/index.md" && !f.frontmatter?.noindex
+    },
     linkToMore: "posts/" as SimpleSlug,
   }),
   // Component.RecentNotes({
