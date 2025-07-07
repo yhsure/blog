@@ -267,6 +267,12 @@ a {
     & .sidebar.right {
       grid-area: grid-sidebar-right;
       margin-right: 0;
+      @media all and ($desktop) {
+        margin-left: $centerLeftGap !important;
+      }
+      @media all and ($tablet) {
+        margin-left: $centerLeftGap !important;
+      }
       flex-direction: column;
       padding-top: 2.1rem; // Align with ArticleTitle top margin (2rem instead of 3rem)
       @media all and ($mobile) {
@@ -307,6 +313,12 @@ a {
 
     & .center {
       grid-area: grid-center;
+      @media all and ($desktop) {
+        margin-left: $centerLeftGap !important;
+      }
+      @media all and ($tablet) {
+        margin-left: $centerLeftGap !important;
+      }
     }
 
     & footer {

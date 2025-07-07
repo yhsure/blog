@@ -8,8 +8,8 @@
  * assuming mobile < desktop
  */
 $breakpoints: (
-  mobile: 1000px,
-  desktop: 1200px,
+  mobile: 900px,
+  desktop: 1024px,
 );
 
 $mobile: "(max-width: #{map.get($breakpoints, mobile)})";
@@ -18,6 +18,8 @@ $desktop: "(min-width: #{map.get($breakpoints, desktop)})";
 
 $pageWidth: #{map.get($breakpoints, mobile)};
 $sidePanelWidth: 320px; //380px;
+$rightSidePanelWidth: 290px;
+$centerLeftGap: $sidePanelWidth - $rightSidePanelWidth;
 $topSpacing: 3rem;
 $boldWeight: 700;
 $semiBoldWeight: 600;
@@ -48,7 +50,7 @@ $tabletGrid: (
 );
 $desktopGrid: (
   templateRows: "auto auto auto",
-  templateColumns: "#{$sidePanelWidth} auto #{$sidePanelWidth}",
+  templateColumns: "#{$sidePanelWidth} auto #{$rightSidePanelWidth}",
   rowGap: "5px",
   columnGap: "5px",
   templateAreas:
