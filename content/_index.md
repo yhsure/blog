@@ -3,6 +3,7 @@ title: "Bjerregaard's Blog"
 tags:
   - evergreen
 banner: "./posts/images/landscape2.svg"
+bannerClass: "noinv"
 ---
 
 ```poetry

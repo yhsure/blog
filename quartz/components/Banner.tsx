@@ -58,12 +58,14 @@ export default ((opts: BannerOpts = {}) => {
     const fm: any = props.fileData?.frontmatter ?? {}
     const frontSrc = fm.banner ?? fm.cover
     const altText = fm.bannerAlt ?? fm.coverAlt ?? opts.alt
+    const bannerClass = fm.bannerClass ?? ""
     const src = frontSrc ?? opts.src
 
     if (src) {
+      const imgClass = bannerClass ? `banner-img ${bannerClass}` : "banner-img"
       return (
         <div class="banner-wrapper">
-          <img class="banner-img" src={src} alt={altText ?? "Banner"} />
+          <img class={imgClass} src={src} alt={altText ?? "Banner"} />
         </div>
       )
     }

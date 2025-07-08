@@ -235,6 +235,12 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                     const alt = match?.groups?.alt ?? ""
                     const width = match?.groups?.width ?? "auto"
                     const height = match?.groups?.height ?? "auto"
+                    
+                    // Extract custom classes from alt text (e.g., "alt text class:my-class" or "alt text class=my-class")
+                    const classMatch = alt.match(/class[=:]([^\s]+)/)
+                    const customClass = classMatch ? classMatch[1] : ""
+                    const cleanAlt = alt.replace(/class[=:][^\s]+/g, "").trim()
+
                     return {
                       type: "image",
                       url,
@@ -242,7 +248,8 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                         hProperties: {
                           width,
                           height,
-                          alt,
+                          alt: cleanAlt,
+                          ...(customClass && { className: customClass }),
                         },
                       },
                     }

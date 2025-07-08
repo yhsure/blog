@@ -24,6 +24,101 @@ img[src*="banner.svg"] {
   filter: invert(100%);
 }
 
+/* -------------------------------------------------------------------------
+ * Dark mode image inversion for better visibility
+ * ------------------------------------------------------------------------- */
+[saved-theme="dark"] img {
+  // Default: Invert images with hue-b (green tint) + high contrast
+  filter: invert(100%) hue-rotate(180deg) brightness(1.2) contrast(1.1);
+  
+  // Exclude photo-like images and specific formats that shouldn't be inverted
+  &[src*=".jpg"], 
+  &[src*=".jpeg"], 
+  &[src*=".png"]:not([src*="diagram"]):not([src*="chart"]):not([src*="graph"]):not([src*="plot"]):not([src*="figure"]),
+  &[src*=".gif"],
+  &[src*=".webp"],
+  &[src*="photo"],
+  &[src*="portrait"],
+  &[src*="avatar"],
+  &[src*="logo"]:not([src*="banner"]) {
+    filter: none;
+  }
+  
+  // Specifically invert technical diagrams, charts, and figures with hue-b
+  &[src*="diagram"],
+  &[src*="chart"],
+  &[src*="graph"],
+  &[src*="plot"],
+  &[src*="figure"],
+  &[src*="schema"],
+  &[src*="flowchart"],
+  &[src*="wireframe"],
+  &[src*="mockup"],
+  &[src*="technical"],
+  &[src*="architecture"] {
+    filter: invert(100%) hue-rotate(180deg) brightness(1.2) contrast(1.1);
+  }
+  
+  // Handle SVG files - invert most with hue-b, but exclude logos (optionally icons)
+  &[src*=".svg"] {
+    filter: invert(100%) hue-rotate(180deg) brightness(1.2) contrast(1.1);
+    
+    &[src*="logo"]:not([src*="banner"]) /*, &[src*="icon"]*/ {
+      filter: none;
+    }
+  }
+
+  // Hue options (dark mode only)
+  &.hue {
+    filter: invert(100%) hue-rotate(180deg) brightness(1.2) contrast(1.1) !important;
+  }
+
+  &.hue-a {
+    filter: invert(100%) hue-rotate(0deg) brightness(1.2) contrast(1.1) !important;
+  }
+
+  &.hue-b {
+    filter: invert(100%) hue-rotate(120deg) brightness(1.2) contrast(1.1) !important;
+  }
+
+  &.hue-c {
+    filter: invert(100%) hue-rotate(240deg) brightness(1.2) contrast(1.1) !important;
+  }
+
+  // Dark mode inv: inversion with high contrast
+  &.inv {
+    filter: invert(100%) hue-rotate(180deg) brightness(1.2) contrast(1.1) !important;
+  }
+
+}
+
+/* -------------------------------------------------------------------------
+ * Light mode image filters
+ * ------------------------------------------------------------------------- */
+[saved-theme="light"] img {
+  // Light mode inv: plain inversion only
+  &.inv {
+    filter: invert(100%) !important;
+  }
+
+  // Light mode noinv: same as photos (no filters)
+  &.noinv,
+  &[alt*="noinv"] {
+    filter: none !important;
+  }
+}
+
+/* -------------------------------------------------------------------------
+ * Dark mode image filters
+ * ------------------------------------------------------------------------- */
+[saved-theme="dark"] img {
+  // Dark mode noinv: no filters (same as photos)
+  &.noinv,
+  &[alt*="noinv"] {
+    filter: none !important;
+  }
+}
+
 body[data-slug="thoughts/craft"] {
   & li:has(> img, > video) {
     list-style-type: none;
