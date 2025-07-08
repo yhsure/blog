@@ -22,7 +22,7 @@ As far as 'about' pages go, I hope this acts as an open invitation into this new
 
 - [*The blog desk*](/posts/): a layman-oriented version of my academic work, and the raison d'être of this garden;
 <!-- - [*The bookshelf on the far wall*](/books): books that are in some state of read, being read, or to be read; -->
-- <a href="https://yhsure.github.io/" target="_blank" rel="noopener noreferrer">*The visual curriculum vitae*</a>: my educational and professional path in a super concise format.
+- <a href="https://yhsure.github.io/" target="_blank" rel="noopener noreferrer" data-router-ignore>*The visual curriculum vitae*</a>: my educational and professional path in a super concise format.
 
 ```poetry
 Andreas Bjerregaard :)
