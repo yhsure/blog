@@ -50,11 +50,37 @@ ul.toc-content.overflow {
   & > li > a {
     color: var(--dark);
     opacity: 0.35;
-    transition:
-      0.5s ease opacity,
-      0.3s ease color;
+    display: block;
+    padding: 0.1rem 0.5rem;
+    border-left: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 400;
+    background-color: transparent;
+    transition: 
+      opacity 0.5s ease,
+      color 0.1s ease,
+      font-weight 0.2s ease,
+      background-color 0.2s ease;
+    
+    &:hover {
+      opacity: 0.85;
+      background-color: var(--lightgray);
+    }
+    
     &.in-view {
-      opacity: 0.75;
+      opacity: 0.65;
+      color: var(--dark);
+    }
+    
+    &.active {
+      opacity: 1;
+      font-weight: 500;
+      color: var(--dark);
+      border-left: 2px solid var(--tertiary, #84cc16);
+      
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 
