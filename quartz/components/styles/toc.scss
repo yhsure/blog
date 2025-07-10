@@ -9,6 +9,17 @@
   &:has(button.toc-header.collapsed) {
     flex: 0 1 1.4rem;
   }
+  
+  // Styles for simple ToC without header
+  &:not(:has(button.toc-header)) {
+    flex: 0 0 auto;
+    min-height: auto;
+    
+    .toc-content {
+      margin-top: 0;
+      max-height: none;
+    }
+  }
 }
 
 button.toc-header {

@@ -10,11 +10,11 @@ import OverflowListFactory from "./OverflowList"
 import { concatenateResources } from "../util/resources"
 
 interface Options {
-  layout: "modern" | "legacy"
+  layout: "modern" | "legacy" | "simple"
 }
 
 const defaultOptions: Options = {
-  layout: "modern",
+  layout: "simple", // Changed from "modern" to "simple"
 }
 
 export default ((opts?: Partial<Options>) => {
@@ -66,8 +66,36 @@ export default ((opts?: Partial<Options>) => {
     )
   }
 
+  // New Simple ToC Component - no header, always visible
+  const SimpleTableOfContents: QuartzComponent = ({
+    fileData,
+    displayClass,
+    cfg,
+  }: QuartzComponentProps) => {
+    if (!fileData.toc) {
+      return null
+    }
+
+    return (
+      <div class={classNames(displayClass, "toc")}>
+        <OverflowList class="toc-content">
+          {fileData.toc.map((tocEntry) => (
+            <li key={tocEntry.slug} class={`depth-${tocEntry.depth}`}>
+              <a href={`#${tocEntry.slug}`} data-for={tocEntry.slug}>
+                {tocEntry.text}
+              </a>
+            </li>
+          ))}
+        </OverflowList>
+      </div>
+    )
+  }
+
   TableOfContents.css = modernStyle
   TableOfContents.afterDOMLoaded = concatenateResources(script, overflowListAfterDOMLoaded)
+  
+  SimpleTableOfContents.css = modernStyle
+  SimpleTableOfContents.afterDOMLoaded = concatenateResources(script, overflowListAfterDOMLoaded)
 
   const LegacyTableOfContents: QuartzComponent = ({ fileData, cfg }: QuartzComponentProps) => {
     if (!fileData.toc) {
@@ -92,5 +120,5 @@ export default ((opts?: Partial<Options>) => {
   }
   LegacyTableOfContents.css = legacyStyle
 
-  return layout === "modern" ? TableOfContents : LegacyTableOfContents
+  return layout === "modern" ? TableOfContents : layout === "simple" ? SimpleTableOfContents : LegacyTableOfContents
 }) satisfies QuartzComponentConstructor

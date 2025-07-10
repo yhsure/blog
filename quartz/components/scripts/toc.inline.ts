@@ -69,7 +69,7 @@ function setupToc() {
   for (const toc of document.getElementsByClassName("toc")) {
     const button = toc.querySelector(".toc-header")
     const content = toc.querySelector(".toc-content")
-    if (!button || !content) return
+    if (!button || !content) return // Skip if no button (simple layout)
     button.addEventListener("click", toggleToc)
     window.addCleanup(() => button.removeEventListener("click", toggleToc))
   }
