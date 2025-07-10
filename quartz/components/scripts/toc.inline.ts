@@ -3,6 +3,9 @@ let currentActiveSection: string | null = null
 const observer = new IntersectionObserver((entries) => {
   for (const entry of entries) {
     const slug = entry.target.id
+    // Skip popover content
+    if (slug.startsWith('popover-internal-')) continue
+    
     const tocEntryElements = document.querySelectorAll(`a[data-for="${slug}"]`)
     const windowHeight = entry.rootBounds?.height
     
@@ -18,7 +21,8 @@ const observer = new IntersectionObserver((entries) => {
 
 // Simple function to update the active section
 function updateActiveSection() {
-  const headers = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]")
+  // Get headers, excluding popover content
+  const headers = document.querySelectorAll("h1[id]:not([id^='popover-internal-']), h2[id]:not([id^='popover-internal-']), h3[id]:not([id^='popover-internal-']), h4[id]:not([id^='popover-internal-']), h5[id]:not([id^='popover-internal-']), h6[id]:not([id^='popover-internal-'])")
   const scrollTop = window.scrollY + 100 // Offset for better UX
   
   let newActiveSection: string | null = null
@@ -69,7 +73,7 @@ function setupToc() {
   for (const toc of document.getElementsByClassName("toc")) {
     const button = toc.querySelector(".toc-header")
     const content = toc.querySelector(".toc-content")
-    if (!button || !content) return // Skip if no button (simple layout)
+    if (!button || !content) continue // Skip if no button (simple layout)
     button.addEventListener("click", toggleToc)
     window.addCleanup(() => button.removeEventListener("click", toggleToc))
   }
@@ -78,7 +82,7 @@ function setupToc() {
 // Continuous scroll handler for instant highlighting
 let rafId: number | null = null
 function handleScroll() {
-  if (rafId) {
+  if (rafId !== null) {
     cancelAnimationFrame(rafId)
   }
   
@@ -96,13 +100,17 @@ document.addEventListener("nav", () => {
 
   // Update toc entry highlighting
   observer.disconnect()
-  const headers = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]")
+  // Exclude popover content from observation
+  const headers = document.querySelectorAll("h1[id]:not([id^='popover-internal-']), h2[id]:not([id^='popover-internal-']), h3[id]:not([id^='popover-internal-']), h4[id]:not([id^='popover-internal-']), h5[id]:not([id^='popover-internal-']), h6[id]:not([id^='popover-internal-'])")
   headers.forEach((header) => observer.observe(header))
   
   // Set up continuous scroll tracking
   document.removeEventListener("scroll", handleScroll)
   document.addEventListener("scroll", handleScroll, { passive: true })
-  window.addCleanup(() => document.removeEventListener("scroll", handleScroll))
+  window.addCleanup(() => {
+    document.removeEventListener("scroll", handleScroll)
+    if (rafId !== null) cancelAnimationFrame(rafId)
+  })
   
   // Initial update - this will highlight the first section if none is active
   updateActiveSection()
