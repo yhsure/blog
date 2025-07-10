@@ -128,7 +128,8 @@
 
 .callout-title {
   display: flex;
-  align-items: flex-start;
+  /* Center items vertically so the icon aligns flush with the title text */
+  align-items: center;
   gap: 5px;
   padding: 1rem 0;
   color: var(--color);
@@ -161,6 +162,7 @@
     mask-size: var(--icon-size) var(--icon-size);
     mask-position: center;
     mask-repeat: no-repeat;
+    /* No extra vertical padding – ensures the icon is flush with the text */
     padding: 0.2rem 0;
   }
 
