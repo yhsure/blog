@@ -84,7 +84,6 @@ export default (() => {
         )}
 
         <link rel="icon" href={iconPath} />
-        <link href="https://uploads-ssl.webflow.com/5ba81c539ad7871a941f69a7/5bb5a4c4e422146e76121b2f_favicon.png" rel="shortcut icon" type="image/x-icon" />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
         <link href={fontStylePath} rel="stylesheet" type="text/css" spa-preserve />
