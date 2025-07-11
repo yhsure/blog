@@ -498,29 +498,44 @@ body[data-slug="index"] {
 // These rules will apply across the whole site – feel free to tweak the
 // colours in variables.scss if you want something different.
 html {
-  // Firefox
-  scrollbar-color: var(--gray) transparent;
-  scrollbar-width: thin;
+  // Hide native scrollbars completely
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow-x: hidden;
 }
 
-// WebKit browsers (Chrome / Edge / Safari)
+// Hide WebKit scrollbars completely
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  display: none;
 }
 
-::-webkit-scrollbar-track {
-  background: transparent;
+// Custom overlay scrollbar
+.custom-scrollbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 100vh;
+  z-index: 1000;
+  pointer-events: none;
+  
+  &__thumb {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    width: 6px;
+    background: var(--gray);
+    border-radius: 3px;
+    cursor: pointer;
+    pointer-events: auto;
+    
+    &:hover {
+      background: var(--secondary);
+    }
+  }
 }
 
-::-webkit-scrollbar-thumb {
-  background: var(--gray);
-  border-radius: 3px;
-}
 
-::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary);
-}
 
 /* -------------------------------------------------------------------------
  * Subtle page progress bar
