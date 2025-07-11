@@ -550,3 +550,45 @@ html {
     transition: transform 0.1s linear;
   }
 }
+
+// Badge styles for shields.io badges (reusable across posts)
+.badge-container {
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin: 20px 0 !important;
+}
+
+.badge-item {
+  display: inline-block !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  border: none !important;
+  background: none !important;
+  position: relative !important;
+}
+
+.badge-item::after,
+.badge-item::before {
+  display: none !important;
+  content: none !important;
+}
+
+.badge-item img {
+  display: block !important;
+  border: none !important;
+  outline: none !important;
+  vertical-align: middle !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.badge-item:hover img {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  cursor: pointer !important;
+}
