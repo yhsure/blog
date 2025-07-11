@@ -316,9 +316,6 @@ a {
       @media all and ($desktop) {
         margin-left: $centerLeftGap !important;
       }
-      @media all and ($tablet) {
-        margin-left: $centerLeftGap !important;
-      }
     }
 
     & footer {
@@ -331,12 +328,9 @@ a {
       min-width: 100%;
       margin-left: auto;
       margin-right: auto;
-      @media all and ($tablet) {
-        margin-right: 0;
-      }
       @media all and ($mobile) {
-        margin-right: 0.5rem;
-        margin-left: 0.5rem; // Reduce center content margins on mobile
+        margin-right: 0;
+        margin-left: 0; // Let container padding handle spacing
       }
     }
     & footer {
