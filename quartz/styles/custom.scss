@@ -607,3 +607,85 @@ html {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
   cursor: pointer !important;
 }
+
+/* -------------------------------------------------------------------------
+ * iOS Safari Fixes
+ * ------------------------------------------------------------------------- */
+// iOS Safari has specific rendering issues that need to be addressed
+// These fixes ensure proper layout on iPhones regardless of browser
+
+// Fix iOS Safari viewport and grid issues
+@supports (-webkit-touch-callout: none) {
+  // This targets iOS Safari specifically
+  @media all and ($mobile) {
+    #quartz-body {
+      // Fix iOS Safari CSS Grid issues
+      display: -webkit-box !important;
+      display: -webkit-flex !important;
+      display: flex !important;
+      flex-direction: column !important;
+      
+      // Ensure no horizontal overflow
+      overflow-x: hidden !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      
+      // Fix container sizing
+      .center {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+      }
+      
+      // Fix grid template issues on iOS
+      grid-template-columns: 1fr !important;
+      grid-template-rows: auto !important;
+    }
+    
+    // Fix iOS Safari safe area issues
+    body {
+      padding-left: env(safe-area-inset-left) !important;
+      padding-right: env(safe-area-inset-right) !important;
+    }
+    
+    // Additional iOS-specific overflow fixes
+    .page {
+      overflow-x: hidden !important;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+}
+
+// Additional iOS Safari specific fixes for margin issues
+@media all and ($mobile) {
+  @supports (-webkit-touch-callout: none) {
+    // Force proper margins on iOS Safari
+    #quartz-body {
+      margin: 0 !important;
+      padding: 0 0.5rem !important;
+      
+      .center {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        
+        // Fix any potential overflow
+        overflow-x: hidden !important;
+        word-wrap: break-word !important;
+        
+        // Fix article content
+        article {
+          margin: 0 !important;
+          padding: 0 !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          box-sizing: border-box !important;
+        }
+      }
+    }
+  }
+}
