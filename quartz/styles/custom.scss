@@ -25,6 +25,29 @@ img[src*="banner.svg"] {
 }
 
 /* -------------------------------------------------------------------------
+ * Hardware acceleration optimizations
+ * ------------------------------------------------------------------------- */
+// Instant theme switching for poor hardware - high specificity
+body.hw-accel-poor,
+body.hw-accel-poor-theme-switch,
+body.hw-accel-poor.animation-ready,
+body.hw-accel-poor-theme-switch.animation-ready {
+  *, *::before, *::after {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+  
+  // Override specific theme transitions with high specificity
+  #dappled-light,
+  #dappled-light * {
+    animation-duration: 0s !important;
+    transition: none !important;
+  }
+}
+
+/* -------------------------------------------------------------------------
  * Dark mode image inversion for better visibility
  * ------------------------------------------------------------------------- */
 [saved-theme="dark"] img {
@@ -258,6 +281,50 @@ body.animation-ready #quartz-body {
     --bounce-light: #1b293f;
   }
 
+  /* Hardware acceleration optimizations */
+  // For poor hardware acceleration, disable expensive effects
+  body.hw-accel-poor & {
+    display: none !important;
+  }
+
+  // For good hardware acceleration, enable all effects
+  body.hw-accel-good & {
+    // Use hardware acceleration optimized properties
+    will-change: background-color, transform, opacity;
+    transform: translateZ(0); // Force GPU layer
+  }
+
+  // Instant theme switching for poor hardware
+  body.hw-accel-poor.animation-ready & {
+    animation-duration: 0s !important;
+    transition: none !important;
+  }
+
+  // Reduced effects for poor hardware that still wants some visual feedback
+  body.hw-accel-poor.dappled-light-reduced & {
+    display: block !important;
+    
+    // Disable expensive blur effects
+    #progressive-blur {
+      display: none !important;
+    }
+    
+    // Disable leaf animation
+    #leaves {
+      animation: none !important;
+    }
+    
+    // Simplify perspective transforms
+    .perspective {
+      transform: none !important;
+      transition: none !important;
+    }
+    
+    // Instant theme switching
+    animation-duration: 0s !important;
+    transition: background-color 0.1s linear !important;
+  }
+
   & > #progressive-blur {
     position: absolute;
     height: 100%;
@@ -297,6 +364,13 @@ body.animation-ready #quartz-body {
     height: 100%;
     width: 100%;
     opacity: 0.5;
+    
+    // For poor hardware acceleration, use simpler gradients
+    body.hw-accel-poor & {
+      background: var(--bounce-light);
+      opacity: 0.1;
+      transition: background 0.1s linear;
+    }
   }
 
   #glow-bounce {
@@ -308,6 +382,13 @@ body.animation-ready #quartz-body {
     height: 100%;
     width: 100%;
     bottom: 0;
+    
+    // For poor hardware acceleration, use simpler gradients
+    body.hw-accel-poor & {
+      background: var(--bounce-light);
+      opacity: 0.05;
+      transition: background 0.1s linear;
+    }
   }
 
   & > .perspective {
@@ -361,6 +442,11 @@ body.animation-ready #quartz-body {
       [saved-theme="dark"] & {
         height: 80px;
       }
+      
+      // For poor hardware acceleration, use instant transitions
+      body.hw-accel-poor & {
+        transition: height 0.1s linear;
+      }
     }
 
     & .shutters {
@@ -372,6 +458,11 @@ body.animation-ready #quartz-body {
 
       [saved-theme="dark"] & {
         gap: 20px;
+      }
+      
+      // For poor hardware acceleration, use instant transitions
+      body.hw-accel-poor & {
+        transition: gap 0.1s linear;
       }
     }
 
@@ -688,4 +779,17 @@ html {
       }
     }
   }
+}
+
+body.animation-static #dappled-light {
+  animation-duration: 0s !important;
+}
+
+/* static state of dappled light once animation finished */
+body.animation-static #dappled-light {
+  animation: none !important;
+  background-color: var(--day);
+}
+[saved-theme="dark"] body.animation-static #dappled-light {
+  background-color: var(--night);
 }

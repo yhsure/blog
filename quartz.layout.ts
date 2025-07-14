@@ -26,6 +26,7 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [Component.Banner({})],
   afterBody: [
+    Component.HardwareDetection(),
     ...recentNotes.map((c) => Component.MobileOnly(c)),
     Component.MobileOnly(Component.SidebarFooter()),
   ],
