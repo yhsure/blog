@@ -25,6 +25,7 @@ import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import Banner from "./Banner"
 import SidebarFooter from "./SidebarFooter"
+import HardwareDetection from "./HardwareDetection"
 
 export {
   ArticleTitle,
@@ -54,4 +55,5 @@ export {
   ConditionalRender,
   Banner,
   SidebarFooter,
+  HardwareDetection,
 }
