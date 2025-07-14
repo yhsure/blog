@@ -260,7 +260,10 @@ a {
         display: flex;
         height: unset;
         flex-direction: row;
-        padding: 0 0.5rem; // Reduce left sidebar padding on mobile
+        padding: 0rem 0.5rem 0.21rem 0.5rem; // Balanced padding for mobile
+        
+        // Add safe area insets for iOS Safari
+        padding-top: max(0.5rem, env(safe-area-inset-top));
       }
     }
 
