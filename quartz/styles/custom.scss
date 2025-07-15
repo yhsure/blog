@@ -267,12 +267,12 @@ body.animation-ready #quartz-body {
 
   body.animation-ready & {
     animation-play-state: running;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-name: sunrise;
   }
 
   [saved-theme="dark"] body.animation-ready & {
-    animation-duration: 1.5s;
+    animation-duration: 3s;
     animation-name: sunset;
   }
 

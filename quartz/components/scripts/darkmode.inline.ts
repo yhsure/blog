@@ -7,9 +7,28 @@ const emitThemeChangeEvent = (theme: "light" | "dark") => {
   const capabilities = (window as any).getHardwareCapabilities?.()
   
   if (capabilities?.hasGoodGPU) {
+    // Reset classes so the sunrise / sunset animation can play again
+    document.body.classList.remove("animation-static")
+    // Force reflow to ensure the browser registers the class change
+    void document.body.offsetWidth
     document.body.classList.add("animation-ready")
+
+    // Once the animation finishes, return to the static state until next toggle
+    const dl = document.getElementById("dappled-light")
+    if (dl) {
+      dl.addEventListener(
+        "animationend",
+        () => {
+          document.body.classList.remove("animation-ready")
+          document.body.classList.add("animation-static")
+        },
+        { once: true },
+      )
+    }
   } else {
+    // Poor hardware – keep instant switching
     document.body.classList.remove("animation-ready")
+    document.body.classList.add("animation-static")
   }
   
   const event: CustomEventMap["themechange"] = new CustomEvent("themechange", {
