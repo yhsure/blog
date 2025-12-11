@@ -23,7 +23,9 @@ Many datasets from biology to social sciences exhibit structures that are natura
 
 By discarding the encoder and directly learning latent variables through maximum likelihood, our method sidesteps the difficult density computations typically needed for variational inference on manifolds. Instead of the complex manifold ELBO approximations in other works, we simply directly maximize:
 
-$$\arg\max_{Z,\theta} \sum_{i=1}^N \left[ \log p(x_i \mid z_i, \theta) + \log p(z_i) \right]$$
+$$
+\arg\max_{Z,\theta} \sum_{i=1}^N \left[ \log p(x_i \mid z_i, \theta) + \log p(z_i) \right]
+$$
 
 where $z_1, z_2, \ldots, z_N$ are latent representations constrained to lie on a Riemannian manifold, and $\theta$ are the decoder parameters. As [geoopt](https://github.com/geoopt/geoopt) conveniently has gradient descent algorithms for [a wide range of manifolds](#supported-manifolds), choosing a manifold is as easy as swapping a single line of code. The code snippet below illustrates the basic training loop:  
 
@@ -73,13 +75,17 @@ Our experiments on the synthetic data demonstrate a clear advantage of hyperboli
 > [!concept] Geometry-aware regularization
 > A key innovation in our approach is **geometry-aware regularization**: During training, we perturb latent points by adding noise scaled according to the local curvature:
 >
-> $$\epsilon \sim \mathcal{N}(0, \sigma^2 G^{-1}(z))$$
+> $$
+> \epsilon \sim \mathcal{N}(0, \sigma^2 G^{-1}(z))
+> $$
 >
 > where $G(z)$ is the Riemannian metric tensor at point $z$. This adapts the noise to the local curvature of the manifold -- intuitively, the noise is scaled by how steep the manifold is at that point. 
 >
 > We found that injecting this noise results in the regularizer 
 > 
-> $$\mathcal{R}(z) = \sigma^2 \, \text{Tr}(J^T G^{-1}(z) J)$$ 
+> $$
+> \mathcal{R}(z) = \sigma^2 \, \text{Tr}(J^T G^{-1}(z) J)
+> $$
 > 
 > where $J = \nabla_z f_\theta(z)$ is the decoder Jacobian. This penalizes rapid changes in output, particularly where the manifold is strongly curved. 
 >
