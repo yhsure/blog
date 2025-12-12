@@ -793,3 +793,39 @@ body.animation-static #dappled-light {
 [saved-theme="dark"] body.animation-static #dappled-light {
   background-color: var(--night);
 }
+
+/* -------------------------------------------------------------------------
+ * Figure Grid Layout for paired images with captions
+ * ------------------------------------------------------------------------- */
+.figure-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto; // Row 1: images, Row 2: captions
+  gap: 2px 15px;
+  margin: 10px 0;
+  
+  .figure-item {
+    display: contents; // Children become direct grid items
+    
+    .figure-img-container {
+      grid-row: 1;
+      text-align: center;
+      
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0; // Override global img margin from base.scss
+      }
+    }
+    
+    .figure-caption {
+      grid-row: 2;
+      text-align: center;
+      font-style: italic;
+      margin: 0;
+      padding: 0;
+      line-height: 1.2;
+    }
+  }
+}

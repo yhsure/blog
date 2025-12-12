@@ -54,18 +54,18 @@ The [GitHub codebase](https://github.com/yhsure/riemannian-generative-decoder) c
 
 First, we validate our approach on synthetic data with known hierarchical structure using a branching diffusion process from [this paper](https://arxiv.org/abs/1901.06033). This allows us to quantitatively assess how well different manifolds capture tree-like relationships. 
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 10px 0; align-items: start;">
-  <div style="text-align: center;">
-    <div style="height: 320px; display: flex; align-items: center; justify-content: center;">
-      <img src="/posts/images/rgd/final_synth_umap_cbar.png" alt="UMAP synthetic" class="hue-b" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+<div class="figure-grid">
+  <div class="figure-item">
+    <div class="figure-img-container">
+      <img src="/posts/images/rgd/final_synth_umap_cbar.png" alt="UMAP synthetic" class="hue-b">
     </div>
-    <p style="font-style: italic; margin: 8px 0 0 0; line-height: 1.3;">UMAP projection fails to show underlying geometry</p>
+    <p class="figure-caption">UMAP projection fails to show underlying geometry</p>
   </div>
-  <div style="text-align: center;">
-    <div style="height: 320px; display: flex; align-items: center; justify-content: center;">
-      <img src="/posts/images/rgd/final_synth_0.5std2_nogrid.png" alt="Hyperbolic synthetic" class="hue-b" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+  <div class="figure-item">
+    <div class="figure-img-container">
+      <img src="/posts/images/rgd/final_synth_0.5std2_nogrid.png" alt="Hyperbolic synthetic" class="hue-b">
     </div>
-    <p style="font-style: italic; margin: 8px 0 0 0; line-height: 1.3;">Hyperbolic (Poincaré) reveals underlying geometry</p>
+    <p class="figure-caption">Hyperbolic (Poincaré) reveals underlying geometry</p>
   </div>
 </div>
 
@@ -111,18 +111,18 @@ Using hyperbolic geometry makes the inferred migrations more interpretable, high
   <p style="font-style: italic; margin: 8px 0 0 0; line-height: 1.3;"> Hyperbolic latents reveal the underlying structure</p>
 </div>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: -10px -5px; align-items: start;">
-  <div style="text-align: center;">
-    <div style="height: 320px; display: flex; align-items: center; justify-content: center;">
-      <img src="/posts/images/rgd/final_hmtdna_rsrs_umap2.png" alt="UMAP projection" class="hue-b" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+<div class="figure-grid">
+  <div class="figure-item">
+    <div class="figure-img-container">
+      <img src="/posts/images/rgd/final_hmtdna_rsrs_umap2.png" alt="UMAP projection" class="hue-b">
     </div>
-    <p style="font-style: italic; margin: 8px 0 16px 0; line-height: 1.3;">UMAP projection fails to reveal the structure</p>
+    <p class="figure-caption">UMAP projection fails to reveal the structure</p>
   </div>
-  <div style="text-align: center;">
-    <div style="height: 320px; display: flex; align-items: center; justify-content: center;">
-      <img src="/posts/images/rgd/final_hmtdna_rsrs_eucl.png" alt="Euclidean latent space" class="hue-b" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+  <div class="figure-item">
+    <div class="figure-img-container">
+      <img src="/posts/images/rgd/final_hmtdna_rsrs_eucl.png" alt="Euclidean latent space" class="hue-b">
     </div>
-    <p style="font-style: italic; margin: 8px 0 16px 0; line-height: 1.3;">Euclidean latents show some improvement</p>
+    <p class="figure-caption">Euclidean latents show some improvement</p>
   </div>
 </div>
 
@@ -133,33 +133,33 @@ Finally, we modeled cyclic biological processes using spherical and toroidal man
 
 Below are results using either UMAP or latents from our model:
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 10px 0; align-items: start;">
-  <div style="text-align: center;">
-    <div style="height: 320px; display: flex; align-items: center; justify-content: center;">
-      <img src="/posts/images/rgd/cc_umap_noax2m_noaxes.png" alt="UMAP cell cycle" class="hue-b" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+<div class="figure-grid">
+  <div class="figure-item">
+    <div class="figure-img-container">
+      <img src="/posts/images/rgd/cc_umap_noax2m_noaxes.png" alt="UMAP cell cycle" class="hue-b">
     </div>
-    <p style="font-style: italic; margin: 5% 0 0 0; line-height: 1.3;">UMAP projection of cell cycle data</p>
+    <p class="figure-caption">UMAP projection of cell cycle data</p>
   </div>
-  <div style="text-align: center;">
-    <div style="height: 320px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-      <img src="/posts/images/rgd/final_cc_euclidean2m.png" alt="Euclidean cell cycle" class="hue-b" style="width: 114%; height: 118%; object-fit: contain; margin-left: -12%; margin-bottom: -25%;">
+  <div class="figure-item">
+    <div class="figure-img-container" style="overflow: hidden;">
+      <img src="/posts/images/rgd/final_cc_euclidean2m.png" alt="Euclidean cell cycle" class="hue-b" style="width: 100%; margin-top: 15%; margin-left: -5%; margin-bottom: -15%; display: block;">
     </div>
-    <p style="font-style: italic; margin: 5% 0 0 0; line-height: 1.3;">Euclidean ℝ² latent space</p>
+    <p class="figure-caption">Euclidean ℝ² latent space</p>
   </div>
 </div>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 10px 0; align-items: start;">
-  <div style="text-align: center;">
-    <div style="height: 320px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-      <img src="/posts/images/rgd/cc_sphere_finalm.png" alt="Spherical cell cycle" class="hue-b" style="width: 100%; height: 167%; object-fit: contain; margin-top: -35%; margin-bottom: -22%;">
+<div class="figure-grid">
+  <div class="figure-item">
+    <div class="figure-img-container" style="overflow: hidden;">
+      <img src="/posts/images/rgd/cc_sphere_finalm.png" alt="Spherical cell cycle" class="hue-b" style="margin-top: -8%; margin-bottom: -15%; display: block;">
     </div>
-    <p style="font-style: italic; margin: -70px 0 0 0; line-height: 1.3;">Spherical 𝕊² latent space</p>
+    <p class="figure-caption">Spherical 𝕊² latent space</p>
   </div>
-  <div style="text-align: center;">
-    <div style="height: 320px; display: flex; align-items: center; justify-content: center; overflow: hidden; padding-right: 25px;">
-      <img src="/posts/images/rgd/cc_torus_finalm.png" alt="Toroidal cell cycle" class="hue-b" style="width: 100%; height: 167%; object-fit: contain; margin-top: -35%; margin-bottom: -22%;">
+  <div class="figure-item">
+    <div class="figure-img-container" style="overflow: hidden;">
+      <img src="/posts/images/rgd/cc_torus_finalm.png" alt="Toroidal cell cycle" class="hue-b" style="width: 90%; margin: 0 auto -15% auto; display: block;">
     </div>
-    <p style="font-style: italic; margin: -70px 21px 0 0; line-height: 1.3;">Toroidal 𝕊¹×𝕊¹ latent space</p>
+    <p class="figure-caption">Toroidal 𝕊¹×𝕊¹ latent space</p>
   </div>
 </div>
 

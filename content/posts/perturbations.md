@@ -72,22 +72,22 @@ We probed a frozen scVI decoder trained on the CELL × GENE Discover Census ($\s
 The model correctly identifies that increasing *Ins1* (insulin) expression drives the latent representation from the diabetic region toward the normal region. 
 
 <div style="text-align: center; margin: 10px 0;">
-   <img src="/posts/images/what-do/all_islet_cells.svg" alt="Loss landscape" class="" style="width: 60%; max-width: 420px;">
+   <img src="/posts/images/what-do/all_islet_cells.svg" alt="Loss landscape" class="" style="width: 63%; max-width: 430px;">
    <p style="font-style: italic; margin: -3px 0 50px 0; line-height: 1.3;"><i>Ins1</i> gradients overlaid on PCA of islet latents; gradients show the direction of <b>increasing</b> expression</p>
 </div>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 10px 0; align-items: start;">
-  <div style="text-align: center;">
-    <div style="height: 320px; display: flex; align-items: center; justify-content: center;">
-      <img src="/posts/images/what-do/fig3_beta.svg" alt="Beta cells Ins1" class="" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+<div class="figure-grid">
+  <div class="figure-item">
+    <div class="figure-img-container">
+      <img src="/posts/images/what-do/fig3_beta.svg" alt="Beta cells Ins1">
     </div>
-    <p style="font-style: italic; margin: -5% 0 0 0; line-height: 1.3;">Beta cells: Increasing <i>Ins1</i> aligns with T2D → healthy</p>
+    <p class="figure-caption">Beta cells: Increasing <i>Ins1</i> aligns with T2D → healthy</p>
   </div>
-  <div style="text-align: center;">
-    <div style="height: 320px; display: flex; align-items: center; justify-content: center;">
-      <img src="/posts/images/what-do/fig3_alpha.svg" alt="Alpha cells Gcg" class="" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+  <div class="figure-item">
+    <div class="figure-img-container">
+      <img src="/posts/images/what-do/fig3_alpha.svg" alt="Alpha cells Gcg">
     </div>
-    <p style="font-style: italic; margin: -5% 0 0 0; line-height: 1.3;">Alpha cells: Increasing <i>Gcg</i> aligns with healthy → T2D</p>
+    <p class="figure-caption">Alpha cells: Increasing <i>Gcg</i> aligns with healthy → T2D</p>
   </div>
 </div>
 
@@ -150,20 +150,20 @@ While the baseline did not identify any pathways at FDR ≤ 0.05, the gradient-b
 
 This framework extends beyond individual genes. By attaching lightweight auxiliary heads for specific tasks -- such as classification or regression -- we can compute gradients for arbitrary concepts like "injury" or "developmental time."
 
-We validated this on cardiotoxin-induced muscle injury and *C. elegans* embryogenesis.
+We validated this on cardiotoxin-induced muscle injury and *C. elegans* embryogenesis (worm embryos during early development).
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 10px 0; align-items: start;">
-  <div style="text-align: center;">
-    <div style="height: 320px; display: flex; align-items: center; justify-content: center;">
-      <img src="/posts/images/what-do/cardiotoxin_preds.svg" alt="Beta cells Ins1" class="" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+<div class="figure-grid">
+  <div class="figure-item">
+    <div class="figure-img-container">
+      <img src="/posts/images/what-do/cardiotoxin_preds.svg" alt="Cardiotoxin injury probability">
     </div>
-    <p style="font-style: italic; margin: 5% 0 0 0; line-height: 1.3;">Gradients of cardiotoxin injury probability</p>
+    <p class="figure-caption">Gradients of cardiotoxin injury probability</p>
   </div>
-  <div style="text-align: center;">
-    <div style="height: 320px; display: flex; align-items: center; justify-content: center;">
-      <img src="/posts/images/what-do/embryotime_preds.svg" alt="Alpha cells Gcg" class="" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+  <div class="figure-item">
+    <div class="figure-img-container">
+      <img src="/posts/images/what-do/embryotime_preds.svg" alt="Developmental time">
     </div>
-    <p style="font-style: italic; margin: 5% 0 0 0; line-height: 1.3;">Gradients of developmental time</p>
+    <p class="figure-caption">Gradients of developmental time</p>
   </div>
 </div>
 
