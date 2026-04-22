@@ -15,6 +15,10 @@ aliases:
 ![[/posts/images/rgd/frontpage_rgd.png|class=hue-b]] 
 <!-- *Overview: A decoder reconstructs data from Riemannian manifolds where representations are optimized as model parameters via maximum likelihood.* -->
 
+> [!update] Update (April 22, 2026)
+> Our paper has now been accepted to **Transactions on Machine Learning Research (TMLR)**.  
+> A short video overview will be posted here soon.
+
 ## Introduction
 
 Many datasets from biology to social sciences exhibit structures that are naturally represented by non-Euclidean geometries, such as evolutionary trees or cyclical processes. However, learning representations on manifolds usually involves complicated probabilistic approximations, potentially harming model performances. Can we simplify representation learning on manifolds by avoiding density estimation altogether?
