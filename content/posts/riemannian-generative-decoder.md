@@ -1,6 +1,6 @@
 ---
 title: "Riemannian generative decoder"
-date: 2025-07-11
+date: 2026-27-4
 tags:
   - generative models
   - Riemannian geometry
@@ -10,14 +10,14 @@ aliases:
   - rgd
 ---
 
-> Simpler representation learning on manifolds. We propose a decoder-only framework to learn latents on arbitrary Riemannian manifolds via maximum likelihood and Riemannian optimization. We highlight its use with biological case studies.
+> Simpler representation learning on manifolds. We propose a decoder-only framework to learn latents on arbitrary Riemannian manifolds via maximum a posteriori estimation and Riemannian optimization. We highlight its use with biological case studies.
 
 ![[/posts/images/rgd/frontpage_rgd.png|class=hue-b]] 
-<!-- *Overview: A decoder reconstructs data from Riemannian manifolds where representations are optimized as model parameters via maximum likelihood.* -->
+<!-- *Overview: A decoder reconstructs data from Riemannian manifolds where representations are optimized as model parameters via maximum a posteriori estimation.* -->
 
-> [!update] Update (April 22, 2026)
-> Our paper has now been accepted to **Transactions on Machine Learning Research (TMLR)**.  
-> A short video overview will be posted here soon.
+> [!update] April 27, 2026
+> Our paper has now been accepted to **Transactions on Machine Learning Research (TMLR)** with a J2C Certification! We will present at ICML 2026 (July 6–11). 
+> A short video overview will be posted soon.
 
 ## Introduction
 
@@ -25,7 +25,7 @@ Many datasets from biology to social sciences exhibit structures that are natura
 
 ## Going encoderless circumvents density estimation
 
-By discarding the encoder and directly learning latent variables through maximum likelihood, our method sidesteps the difficult density computations typically needed for variational inference on manifolds. Instead of the complex manifold ELBO approximations in other works, we simply directly maximize:
+By discarding the encoder and directly learning latent variables through maximum a posteriori estimation, our method sidesteps the difficult density computations typically needed for variational inference on manifolds. Instead of the complex manifold ELBO approximations in other works, we simply directly maximize:
 
 $$
 \arg\max_{Z,\theta} \sum_{i=1}^N \left[ \log p(x_i \mid z_i, \theta) + \log p(z_i) \right]
